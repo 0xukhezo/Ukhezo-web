@@ -1,3 +1,10 @@
+import { Header } from "@/src/components/layout/Header"
+
 export default function Home() {
-  return <h1 className="text-3xl font-bold">Ukhezo Website</h1>
+  return (
+    <>
+      <Header />
+      <h1 className="text-3xl font-bold">Ukhezo Website</h1>
+    </>
+  )
 }
