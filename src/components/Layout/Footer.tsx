@@ -22,7 +22,7 @@ export default function Footer() {
               onClick={() =>
                 router.push("mailto:ukhezo.web3@gmail.com?subject=Contact%20ukhezo%20")
               }
-              className={`${router.route !== "/" ? "footer-links-pc" : "footer-links"}`}
+              className={`text-start ${router.route !== "/" ? "footer-links-pc" : "footer-links"}`}
             >
               Contact Me
             </button>

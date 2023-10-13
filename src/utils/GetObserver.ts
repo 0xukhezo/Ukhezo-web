@@ -3,9 +3,10 @@ export const getObserver = (type: string) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         entry.target.classList.add(type)
-      } else {
-        entry.target.classList.remove(type)
       }
+      //   else {
+      //     entry.target.classList.remove(type)
+      //   }
     })
   })
   return observer

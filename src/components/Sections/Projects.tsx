@@ -5,9 +5,9 @@ import { ProjectType } from "@/types/Types"
 
 export default function Projects() {
   return (
-    <div className="text-white text-center" id="porfolio">
+    <div className="text-white text-center px-10" id="porfolio">
       <h1 className="text-white font-semibold text-4xl mb-4">Porfolio</h1>
-      <div className="max-w-[800px] mx-auto mt-[40px px-10">
+      <div className="max-w-[800px] mx-auto mt-[40px] lg:mb-40">
         Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem
         Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un
         impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de
@@ -18,6 +18,7 @@ export default function Projects() {
         recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual
         incluye versiones de Lorem Ipsum.
       </div>
+
       {projects.map((project: ProjectType, index: number) => {
         return <ProjectCard index={index + 1} key={project.title} project={project} />
       })}

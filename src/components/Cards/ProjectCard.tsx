@@ -14,35 +14,44 @@ interface ProjectCardProps {
 }
 
 export default function ProjectCard({ index, project }: ProjectCardProps) {
-  //   const enterImage = () => {
-  //     const hiddenProjectsImages = document.querySelectorAll(".projectImageStart") as any
-  //     const projectImagesObserver = getObserver("projectImageFinish")
-  //     hiddenProjectsImages.forEach((el: any) => projectImagesObserver.observe(el))
-  //     const hiddenProjectsText = document.querySelectorAll(".projectTextStart") as any
-  //     const projectTextObserver = getObserver("projectTextFinish")
-  //     hiddenProjectsText.forEach((el: any) => projectTextObserver.observe(el))
-  //   }
+  const enterImage = () => {
+    const hiddenProjectsImages = document.querySelectorAll(".projectImageStart") as any
+    const projectImagesObserver = getObserver("projectImageFinish")
+    hiddenProjectsImages.forEach((el: any) => projectImagesObserver.observe(el))
+    const hiddenProjectsText = document.querySelectorAll(".projectTextStart") as any
+    const projectTextObserver = getObserver("projectTextFinish")
+    hiddenProjectsText.forEach((el: any) => projectTextObserver.observe(el))
+  }
 
-  //   useEffect(() => {
-  //     window.addEventListener("scroll", enterImage)
-  //     enterImage()
-  //   }, [])
+  useEffect(() => {
+    window.addEventListener("scroll", enterImage)
+    enterImage()
+  }, [])
 
   return (
-    <section className="flex text-center bg-gray-900 rounded-xl mx-10 p-4 my-10 min-h-[500px]">
+    <section className="flex text-center rounded-xl lg:mx-10 lg:py-20 py-5 lg:max-h-[500px] flex lg:flex-row flex-col">
       <Image
         src={Logo.src}
         alt="Your Company"
         width={400}
         height={400}
-        className={index % 2 !== 1 ? "max-w-[400px] max-h-[400px] rounded-lg mx-10" : "hidden"}
-        // className="projectImageStart max-w-[400px] max-h-[400px] rounded-lg"
+        className={
+          index % 2 !== 1
+            ? "projectImageStart xl:max-w-[400px] xl:max-h-[400px] lg:max-w-[300px] lg:max-h-[300px] rounded-lg hidden lg:block"
+            : "hidden"
+        }
       />
-      <div
-        className="text-pink text-start my-auto"
-        //   className="projectTextStart my-auto text-pink"
-      >
-        <h1 className="text-white font-semibold text-4xl mb-4">{project.title}</h1>
+      <Image
+        src={Logo.src}
+        alt="Your Company"
+        width={400}
+        height={400}
+        className={
+          "projectImageStart xl:max-w-[400px] xl:max-h-[400px] max-w-[250px] max-h-[250px] rounded-lg lg:hidden block "
+        }
+      />
+      <div className="text-white lg:text-start my-auto projectTextStart  lg:max-h-[400px] mt-4 text-center">
+        <h1 className="font-semibold text-4xl mb-4">{project.title}</h1>
         <span className="text-lg">{project.description}</span>
       </div>
       <Image
@@ -50,8 +59,11 @@ export default function ProjectCard({ index, project }: ProjectCardProps) {
         alt="Your Company"
         width={400}
         height={400}
-        className={index % 2 === 1 ? "max-w-[400px] max-h-[400px] rounded-lg mx-10" : "hidden"}
-        // className="projectImageStart max-w-[400px] max-h-[400px] rounded-lg"
+        className={
+          index % 2 === 1
+            ? "projectImageStart xl:max-w-[400px] xl:max-h-[400px] lg:max-w-[300px] lg:max-h-[300px] max-w-[200px] max-h-[200px] rounded-lg hidden lg:block"
+            : "hidden"
+        }
       />
     </section>
   )

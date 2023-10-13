@@ -89,6 +89,7 @@
 html{
   scroll-behavior: smooth;
   scroll-padding: var(--scroll-padding, 5rem);
+  overflow-x: hidden;
 }
 
 .hiddenShowUp{
@@ -265,10 +266,9 @@ html{
   color: #fd16f9;
 }
 
-
 .projectImageStart{
-    margin: 0 auto;
-    scale: 1.4
+    margin: auto;
+    scale:1.2;
 }
 
 .projectTextStart{
@@ -277,13 +277,55 @@ html{
    width: 0;
 }
 
-.projectImageFinish{   
-    transition: all 2.8s 1s;  scale: 1;
+.logos {
+    overflow: hidden;
+    padding: 60px 0;
+    background: #000000;
+    white-space: nowrap;
+    position: relative;
+
+  }
+  
+  .logos-slide {
+    display: inline-flex;
+    animation: 120s slide infinite linear;
+  }
+  
+  .logos-slide img {
+    margin: 0 25px;
+  }
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
 }
 
-.projectTextFinish{
-    transition: all 2.8s 1s;
-    opacity: 1;
-    display: block;
-    width: 70%;
+@media (min-width: 1024px) {
+    .projectImageFinish{   
+        transition: all 2.8s 1s;   
+        scale:1
+    }
+    
+    .projectTextFinish{
+        transition: width 2.8s, dispaly 2.8s, opacity 1.4s 2.8s;
+        opacity: 1;
+        display: block;
+        width: 60%;
+    }
 }
+
+@media (max-width: 1024px) {
+    .projectImageFinish{   
+        scale:1;
+    }
+    .projectTextFinish{
+        opacity: 1;
+        width: 100%;
+    }
+}
+
+
