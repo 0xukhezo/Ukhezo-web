@@ -86,11 +86,6 @@
 }
 
 
-#graph1{
-  height: 20%;
-  animation: graph1-animation 2s linear forwards;
-    animation-delay: 2.5s;
-}
 html{
   scroll-behavior: smooth;
   scroll-padding: var(--scroll-padding, 5rem);
@@ -257,7 +252,7 @@ html{
 }
 
 .footer-links:hover{
-  color:white
+  color:#fd16f9
 }
 
 .footer-links-pc{  
@@ -267,7 +262,7 @@ html{
 }
 
 .footer-links-pc:hover{
-  color:  #3C4A47;
+  color: #fd16f9;
 }
 
 

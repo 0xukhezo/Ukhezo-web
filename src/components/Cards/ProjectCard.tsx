@@ -29,7 +29,7 @@ export default function ProjectCard({ index, project }: ProjectCardProps) {
   //   }, [])
 
   return (
-    <section className="flex text-center bg-gray-900 rounded-xl mx-10 p-4 my-10 min-h-[500px] flex items-center">
+    <section className="flex text-center bg-gray-900 rounded-xl mx-10 p-4 my-10 min-h-[500px]">
       <Image
         src={Logo.src}
         alt="Your Company"
@@ -39,10 +39,10 @@ export default function ProjectCard({ index, project }: ProjectCardProps) {
         // className="projectImageStart max-w-[400px] max-h-[400px] rounded-lg"
       />
       <div
-        className="my-auto text-pink text-start"
+        className="text-pink text-start my-auto"
         //   className="projectTextStart my-auto text-pink"
       >
-        <h1 className="text-white font-semibold text-2xl mb-4">{project.title}</h1>
+        <h1 className="text-white font-semibold text-4xl mb-4">{project.title}</h1>
         <span className="text-lg">{project.description}</span>
       </div>
       <Image

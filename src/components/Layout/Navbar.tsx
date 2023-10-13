@@ -13,8 +13,8 @@ export default function Navbar() {
   return (
     <Disclosure as="nav" id="navbar" className="primary-navigation">
       <>
-        <div className="mx-auto pt-5 px-10 bg-black hidden sm:block">
-          <div className="flex h-24 items-center justify-between">
+        <div className="mx-auto pt-5 bg-black hidden sm:block">
+          <div className="flex h-24 items-center mx-10 justify-evenly">
             <div className="flex-shrink-0">
               <Link href="/">
                 <Image
@@ -26,9 +26,9 @@ export default function Navbar() {
                 />
               </Link>
             </div>
-            <div className="flex items-center">
+            <div className="flex items-center ml-28">
               <div className="hidden sm:ml-6 md:block">
-                <div className="flex space-x-10 text-white">
+                <div className="flex space-x-10 text-white ">
                   <Link
                     href={router.route !== "/" ? "/#me" : "#me"}
                     className="underline-hover hover:text-pink"
@@ -42,10 +42,10 @@ export default function Navbar() {
                     Porfolio
                   </Link>
                   <Link
-                    href={router.route !== "/" ? "/#github" : "#github"}
+                    href={router.route !== "/" ? "/#stack" : "#stack"}
                     className="underline-hover hover:text-pink"
                   >
-                    Github
+                    Stack
                   </Link>
                 </div>
               </div>
@@ -71,7 +71,7 @@ export default function Navbar() {
           <div className="mx-5 flex items-center justify-between mb-[25px] bg-black text-white p-5 rounded-lg border-white border-1">
             <Link href={router.route !== "/" ? "/#me" : "#me"}>Me</Link>
             <Link href={router.route !== "/" ? "/#porfolio" : "#porfolio"}>Porfolio</Link>
-            <Link href={router.route !== "/" ? "/#github" : "#github"}>Github</Link>
+            <Link href={router.route !== "/" ? "/#stack" : "#stack"}>Stack</Link>
           </div>
         </div>
       </>
