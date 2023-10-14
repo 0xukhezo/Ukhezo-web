@@ -277,23 +277,27 @@ html{
    width: 0;
 }
 
+.cardProjectStart{
+    background-color: black;
+}
+
 .logos {
     overflow: hidden;
     padding: 60px 0;
     background: #000000;
     white-space: nowrap;
     position: relative;
-
-  }
+}
   
-  .logos-slide {
+.logos-slide {
     display: inline-flex;
-    animation: 120s slide infinite linear;
-  }
-  
-  .logos-slide img {
+    opacity: 0.6;
+    animation: 60s slide infinite linear;
+}
+
+.logos-slide img {
     margin: 0 25px;
-  }
+}
 
 @keyframes slide {
     from {
@@ -306,15 +310,20 @@ html{
 
 @media (min-width: 1024px) {
     .projectImageFinish{   
-        transition: all 2.8s 1s;   
+        transition: all 1.4s 1.4s;   
         scale:1
     }
     
     .projectTextFinish{
-        transition: width 2.8s, dispaly 2.8s, opacity 1.4s 2.8s;
+        transition: width 1.4s, dispaly 1.4s, opacity 0.7s 1.4s;
         opacity: 1;
         display: block;
         width: 60%;
+    }
+
+    .cardProjectFinish{
+        transition: all 1.4s 1.4s;
+        background-color: rgb(15 23 42);
     }
 }
 

@@ -3,11 +3,9 @@ import React, { useEffect, useRef } from "react"
 // Next
 import Image from "next/image"
 
-interface PoapProps {
-  poaps: any
-}
+import { poaps } from "../../../constants/Constants"
 
-function Poaps({ poaps }: PoapProps) {
+function Poaps() {
   const logosSlideRef = useRef<HTMLDivElement | null>(null)
 
   useEffect(() => {
@@ -27,7 +25,7 @@ function Poaps({ poaps }: PoapProps) {
           {poaps.map((poap: any, index: number) => (
             <div key={index}>
               <Image
-                src={poap.event.image_url}
+                src={poap}
                 alt={`Image ${index}`}
                 height={96}
                 width={96}

@@ -1,42 +1,43 @@
 // React
-import React, { useState, useEffect } from "react"
+import React from "react"
+// Components
 import Poaps from "./Poaps"
 
 export default function Hero() {
-  const [poaps, setPoaps] = useState<any>([])
-  const options = {
-    method: "GET",
-    headers: {
-      accept: "application/json",
-      "x-api-key": `${process.env.NEXT_PUBLIC_POAP_API}`,
-    },
-  }
+  // const [poaps, setPoaps] = useState<any>([])
+  // const options = {
+  //   method: "GET",
+  //   headers: {
+  //     accept: "application/json",
+  //     "x-api-key": `${process.env.NEXT_PUBLIC_POAP_API}`,
+  //   },
+  // }
 
-  const fetchPoaps = () => {
-    fetch(`https://api.poap.tech/actions/scan/${process.env.NEXT_PUBLIC_ADDRESS}`, options)
-      .then((response) => response.json())
-      .then((response) => {
-        const filteredPoaps = response.filter((poap: any) => {
-          return (
-            poap.tokenId !== "6296636" &&
-            poap.tokenId !== "6598905" &&
-            poap.tokenId !== "6729137" &&
-            poap.tokenId !== "6217086" &&
-            poap.tokenId !== "6546244" &&
-            poap.tokenId !== "6465718" &&
-            poap.tokenId !== "6433423" &&
-            poap.tokenId !== "6621122" &&
-            poap.tokenId !== "6642725"
-          )
-        })
-        setPoaps(filteredPoaps)
-      })
-      .catch((err) => console.error(err))
-  }
+  // const fetchPoaps = () => {
+  //   fetch(`https://api.poap.tech/actions/scan/${process.env.NEXT_PUBLIC_ADDRESS}`, options)
+  //     .then((response) => response.json())
+  //     .then((response) => {
+  //       const filteredPoaps = response.filter((poap: any) => {
+  //         return (
+  //           poap.tokenId !== "6296636" &&
+  //           poap.tokenId !== "6598905" &&
+  //           poap.tokenId !== "6729137" &&
+  //           poap.tokenId !== "6217086" &&
+  //           poap.tokenId !== "6546244" &&
+  //           poap.tokenId !== "6465718" &&
+  //           poap.tokenId !== "6433423" &&
+  //           poap.tokenId !== "6621122" &&
+  //           poap.tokenId !== "6642725"
+  //         )
+  //       })
+  //       setPoaps(filteredPoaps)
+  //     })
+  //     .catch((err) => console.error(err))
+  // }
 
-  useEffect(() => {
-    fetchPoaps()
-  }, [])
+  // useEffect(() => {
+  //   fetchPoaps()
+  // }, [])
 
   return (
     <div className="text-center mb-10">
@@ -54,7 +55,7 @@ export default function Hero() {
         worked at Cryptoplaza as Front-End and developed personal projects in which I expanded my
         skills.
       </div>
-      <Poaps poaps={poaps} />
+      <Poaps />
     </div>
   )
 }

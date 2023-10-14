@@ -21,6 +21,9 @@ export default function ProjectCard({ index, project }: ProjectCardProps) {
     const hiddenProjectsText = document.querySelectorAll(".projectTextStart") as any
     const projectTextObserver = getObserver("projectTextFinish")
     hiddenProjectsText.forEach((el: any) => projectTextObserver.observe(el))
+    const hiddenProjectsCard = document.querySelectorAll(".cardProjectStart") as any
+    const projectCardObserver = getObserver("cardProjectFinish")
+    hiddenProjectsCard.forEach((el: any) => projectCardObserver.observe(el))
   }
 
   useEffect(() => {
@@ -29,7 +32,8 @@ export default function ProjectCard({ index, project }: ProjectCardProps) {
   }, [])
 
   return (
-    <section className="flex text-center rounded-xl lg:mx-10 lg:py-20 py-5 lg:max-h-[500px] flex lg:flex-row flex-col">
+    <section className="flex text-center rounded-xl lg:mx-10 lg:my-20 py-5 lg:max-h-[500px] flex lg:flex-row flex-col cardProjectStart">
+      {" "}
       <Image
         src={Logo.src}
         alt="Your Company"
@@ -50,7 +54,7 @@ export default function ProjectCard({ index, project }: ProjectCardProps) {
           "projectImageStart xl:max-w-[400px] xl:max-h-[400px] max-w-[250px] max-h-[250px] rounded-lg lg:hidden block "
         }
       />
-      <div className="text-white lg:text-start my-auto projectTextStart  lg:max-h-[400px] mt-4 text-center">
+      <div className="text-white lg:text-start my-auto projectTextStart lg:max-h-[400px] mt-4 text-center px-10">
         <h1 className="font-semibold text-4xl mb-4">{project.title}</h1>
         <span className="text-lg">{project.description}</span>
       </div>
