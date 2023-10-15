@@ -283,7 +283,7 @@ html{
 
 .logos {
     overflow: hidden;
-    padding: 60px 0;
+    padding: 60px 0 0 0;
     background: #000000;
     white-space: nowrap;
     position: relative;

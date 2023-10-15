@@ -2,7 +2,7 @@ import React from "react"
 
 export default function Stack() {
   return (
-    <div className="text-center mb-10">
+    <div className="text-center mb-10" id="stack">
       <h1 className="font-semibold text-4xl py-4">Stack</h1>
       <div className="grid lg:grid-cols-3">
         <div className="max-w-[800px] mx-auto mt-[40px] px-10 flex flex-col">

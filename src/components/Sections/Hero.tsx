@@ -40,7 +40,7 @@ export default function Hero() {
   // }, [])
 
   return (
-    <div className="text-center mb-10">
+    <div className="text-center py-10 lg:mb-10" id="me">
       <h1 className="text-white font-semibold text-4xl py-4">About me</h1>
       <div className="max-w-[800px] mx-auto mt-[40px] px-10">
         I am a Front-End Developer focused on web3 and new technologies. My professional career
