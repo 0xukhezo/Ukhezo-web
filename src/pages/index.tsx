@@ -6,6 +6,7 @@ import Footer from "@/components/Layout/Footer"
 import Hero from "@/components/Sections/Hero"
 import Projects from "@/components/Sections/Projects"
 import Stack from "@/components/Sections/Stack"
+import Awards from "@/components/Sections/Awards"
 
 export default function Home() {
   // const setScrollPadding = () => {
@@ -36,6 +37,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Stack />
+      <Awards />
       <Projects />
       <Footer />
     </main>
