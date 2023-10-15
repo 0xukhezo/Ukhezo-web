@@ -5,6 +5,7 @@ import Navbar from "@/components/Layout/Navbar"
 import Footer from "@/components/Layout/Footer"
 import Hero from "@/components/Sections/Hero"
 import Projects from "@/components/Sections/Projects"
+import Stack from "@/components/Sections/Stack"
 
 export default function Home() {
   // const setScrollPadding = () => {
@@ -34,6 +35,7 @@ export default function Home() {
     <main className="bg-black text-white">
       <Navbar />
       <Hero />
+      <Stack />
       <Projects />
       <Footer />
     </main>

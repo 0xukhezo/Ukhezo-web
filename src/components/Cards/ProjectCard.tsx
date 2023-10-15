@@ -32,7 +32,11 @@ export default function ProjectCard({ index, project }: ProjectCardProps) {
   }, [])
 
   return (
-    <section className="flex text-center rounded-xl lg:mx-10 lg:my-20 py-5 lg:max-h-[500px] flex lg:flex-row flex-col cardProjectStart">
+    <section
+      className={`flex text-center rounded-xl ${
+        index % 2 !== 1 ? "lg:pr-10" : "lg:pl-10"
+      } lg:my-20 py-5 lg:max-h-[500px] flex lg:flex-row flex-col cardProjectStart`}
+    >
       {" "}
       <Image
         src={Logo.src}
@@ -54,7 +58,7 @@ export default function ProjectCard({ index, project }: ProjectCardProps) {
           "projectImageStart xl:max-w-[400px] xl:max-h-[400px] max-w-[250px] max-h-[250px] rounded-lg lg:hidden block "
         }
       />
-      <div className="text-white lg:text-start my-auto projectTextStart lg:max-h-[400px] mt-4 text-center px-10">
+      <div className="text-white lg:text-start my-auto projectTextStart lg:max-h-[400px] mt-4 ">
         <h1 className="font-semibold text-4xl mb-4">{project.title}</h1>
         <span className="text-lg">{project.description}</span>
       </div>

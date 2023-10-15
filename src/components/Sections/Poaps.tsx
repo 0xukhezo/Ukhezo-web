@@ -21,7 +21,7 @@ function Poaps() {
   return (
     <>
       <div className="logos w-screen ">
-        <div className="logos-slide " ref={logosSlideRef}>
+        <div className="logos-slide" ref={logosSlideRef}>
           {poaps.map((poap: any, index: number) => (
             <div key={index}>
               <Image

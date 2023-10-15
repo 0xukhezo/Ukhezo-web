@@ -36,16 +36,22 @@ export default function Navbar() {
                     Me
                   </Link>
                   <Link
-                    href={router.route !== "/" ? "/#porfolio" : "#porfolio"}
+                    href={router.route !== "/" ? "/#awards" : "#awards"}
                     className="underline-hover hover:text-pink"
                   >
-                    Porfolio
+                    Awards
                   </Link>
                   <Link
                     href={router.route !== "/" ? "/#stack" : "#stack"}
                     className="underline-hover hover:text-pink"
                   >
                     Stack
+                  </Link>{" "}
+                  <Link
+                    href={router.route !== "/" ? "/#porfolio" : "#porfolio"}
+                    className="underline-hover hover:text-pink"
+                  >
+                    Porfolio
                   </Link>
                 </div>
               </div>
@@ -70,6 +76,7 @@ export default function Navbar() {
         <div className="md:hidden fixed inset-x-0 bottom-0 w-full z-50 ">
           <div className="mx-5 flex items-center justify-between mb-[25px] bg-black text-white p-5 rounded-lg border-white border-1">
             <Link href={router.route !== "/" ? "/#me" : "#me"}>Me</Link>
+            <Link href={router.route !== "/" ? "/#awards" : "#awards"}>Awards</Link>
             <Link href={router.route !== "/" ? "/#porfolio" : "#porfolio"}>Porfolio</Link>
             <Link href={router.route !== "/" ? "/#stack" : "#stack"}>Stack</Link>
           </div>
