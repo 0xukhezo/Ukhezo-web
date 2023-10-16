@@ -32,46 +32,50 @@ export default function ProjectCard({ index, project }: ProjectCardProps) {
   }, [])
 
   return (
-    <section
-      className={`flex text-center rounded-xl ${
-        index % 2 !== 1 ? "lg:pr-10" : "lg:pl-10"
-      } lg:my-20 py-5 lg:max-h-[500px] flex lg:flex-row flex-col cardProjectStart`}
-    >
-      <Image
-        src={Logo.src}
-        alt="Your Company"
-        width={400}
-        height={400}
-        className={
-          index % 2 !== 1
-            ? "projectImageStart xl:max-w-[400px] xl:max-h-[400px] lg:max-w-[300px] lg:max-h-[300px] rounded-lg hidden lg:block"
-            : "hidden"
-        }
-      />
-      <Image
-        src={Logo.src}
-        alt="Your Company"
-        width={400}
-        height={400}
-        className={
-          "projectImageStart xl:max-w-[400px] xl:max-h-[400px] max-w-[250px] max-h-[250px] rounded-lg lg:hidden block "
-        }
-      />
-      <div className="text-white lg:text-start my-auto projectTextStart lg:max-h-[400px] mt-4 ">
-        <h1 className="font-semibold text-4xl mb-4 font-anton tracking-wider">{project.title}</h1>
-        <span className="font-bitter text-xl">{project.description}</span>
-      </div>
-      <Image
-        src={Logo.src}
-        alt="Your Company"
-        width={400}
-        height={400}
-        className={
-          index % 2 === 1
-            ? "projectImageStart xl:max-w-[400px] xl:max-h-[400px] lg:max-w-[300px] lg:max-h-[300px] max-w-[200px] max-h-[200px] rounded-lg hidden lg:block"
-            : "hidden"
-        }
-      />
-    </section>
+    <a target="_blank" href={project.url}>
+      <section
+        className={`flex text-center rounded-xl ${
+          index % 2 !== 1 ? "lg:pr-10" : "lg:pl-10"
+        } lg:my-20 py-5 lg:max-h-[500px] flex lg:flex-row flex-col cardProjectStart`}
+      >
+        <Image
+          src={Logo.src}
+          alt="Your Company"
+          width={400}
+          height={400}
+          className={
+            index % 2 !== 1
+              ? "projectImageStart xl:max-w-[400px] xl:max-h-[400px] lg:max-w-[300px] lg:max-h-[300px] rounded-lg hidden lg:block"
+              : "hidden"
+          }
+        />
+        <Image
+          src={Logo.src}
+          alt="Your Company"
+          width={400}
+          height={400}
+          className={
+            "projectImageStart xl:max-w-[400px] xl:max-h-[400px] max-w-[250px] max-h-[250px] rounded-lg lg:hidden block "
+          }
+        />
+        <div className="text-white lg:text-start my-auto projectTextStart lg:max-h-[400px] mt-4 ">
+          <h1 className="font-semibold text-4xl mb-4 font-anton tracking-wider">
+            {project.title}
+          </h1>
+          <span className="font-bitter text-xl">{project.description}</span>
+        </div>
+        <Image
+          src={Logo.src}
+          alt="Your Company"
+          width={400}
+          height={400}
+          className={
+            index % 2 === 1
+              ? "projectImageStart xl:max-w-[400px] xl:max-h-[400px] lg:max-w-[300px] lg:max-h-[300px] max-w-[200px] max-h-[200px] rounded-lg hidden lg:block"
+              : "hidden"
+          }
+        />
+      </section>
+    </a>
   )
 }
