@@ -86,7 +86,6 @@
   }
 }
 
-
 html{
   scroll-behavior: smooth;
   scroll-padding: var(--scroll-padding, 5rem);
@@ -111,7 +110,6 @@ html{
   filter: blur(0);
   transform: translateY(0);
 }
-
 
 .full-screen-section {
   height: 100vh;
@@ -172,7 +170,6 @@ html{
   stroke-dasharray: 1000;
   animation: showLine-animation 0.8s linear forwards;
 }
-
 
 .centered {  
     margin-left: auto;

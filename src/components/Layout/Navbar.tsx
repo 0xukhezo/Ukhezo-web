@@ -38,6 +38,7 @@ export default function Navbar() {
                     return (
                       <Link
                         href={router.route !== "/" ? `/${link.href}` : `${link.href}`}
+                        key={link.href}
                         className="underline-hover hover:text-pink"
                       >
                         {link.name}
@@ -70,6 +71,7 @@ export default function Navbar() {
               return (
                 <Link
                   href={router.route !== "/" ? `/${link.href}` : `${link.href}`}
+                  key={link.href}
                   className="underline-hover hover:text-pink"
                 >
                   {link.name}

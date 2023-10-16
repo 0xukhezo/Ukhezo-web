@@ -31,7 +31,7 @@ export default function Footer() {
             <div className="flex flex-row space-x-4">
               {footerNavigation.map((link: FooterNavigationType) => {
                 return (
-                  <a href={link.href} target="_blank">
+                  <a href={link.href} target="_blank" key={link.href}>
                     <Image width={24} height={24} alt="Token Image" src={link.src} />
                   </a>
                 )

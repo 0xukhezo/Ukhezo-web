@@ -36,8 +36,12 @@ export default function AwardCard({ award, index }: AwardCardProps) {
           <div className="text-center md:text-start">
             <h3 className="font-bitter text-2xl">Winner in:</h3>
             <div className="md:ml-8 mt-4">
-              {award.winners.map((winner: any) => {
-                return <div className="my-2 font-bitter text-xl">{winner}</div>
+              {award.winners.map((winner: string) => {
+                return (
+                  <div className="my-2 font-bitter text-xl" key={winner}>
+                    {winner}
+                  </div>
+                )
               })}
             </div>
           </div>
