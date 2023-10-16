@@ -337,18 +337,5 @@ html{
         opacity: 1;
         width: 100%;
     }
-
-    .cardProjectStart{
-      opacity:0;
-      filter: blur(5px);
-      transform: translateY(100%);
-      transition: all 1s 0.2s;
-    }
-
-    .cardProjectFinish{
-      opacity:1;
-      filter: blur(0);
-      transform: translateY(0);
-    }
 }
 
