@@ -3,11 +3,8 @@ import React from "react"
 // Next
 import Image from "next/image"
 import { useRouter } from "next/router"
-// Images
-import TwitterDark from "../../../public/TwitterDark.svg"
-import TelegramDark from "../../../public/TelegramDark.svg"
-import LensDark from "../../../public/LensDark.svg"
-import GithubDark from "../../../public/GithubDark.svg"
+import { footerNavigation } from "../../../constants/Constants"
+import { FooterNavigationType } from "@/types/Types"
 
 export default function Footer() {
   const router = useRouter()
@@ -30,26 +27,20 @@ export default function Footer() {
           <div className="ml-10">
             <h1 className="md:mb-[25px] mb-[12px] font-semibold">Follow Me</h1>
             <div className="flex flex-row space-x-4">
-              {" "}
-              <a href="https://twitter.com/0xUkhezo" target="_blank">
-                <Image width={24} height={24} alt="Token Image" src={TwitterDark.src} />
-              </a>
-              <a href="https://hey.xyz/u/ukhezo" target="_blank">
-                <Image width={24} height={24} alt="Token Image" src={LensDark.src} />
-              </a>
-              <a href="https://t.me/Ukhezo" target="_blank">
-                <Image width={24} height={24} alt="Token Image" src={TelegramDark.src} />
-              </a>{" "}
-              <a href="https://github.com/0xukhezo" target="_blank">
-                <Image width={24} height={24} alt="Token Image" src={GithubDark.src} />
-              </a>
+              {footerNavigation.map((link: FooterNavigationType) => {
+                return (
+                  <a href={link.href} target="_blank">
+                    <Image width={24} height={24} alt="Token Image" src={link.src} />
+                  </a>
+                )
+              })}
             </div>
           </div>
         </div>
-        <div className="flex justify-around sm:justify-start md:justify-end mt-[40px] border-b-1 border-[#d1d1d1] pb-[17px]"></div>
-        <div className="pb-[100px] pt-[42px] text-white text-center">
+        <div className="flex justify-around sm:justify-start md:justify-end mt-[40px] border-b-1 border-white mb-40"></div>
+        {/* <div className="pb-[100px] pt-[42px] text-white text-center">
           Copyright © 2023 Ukhezo. All Rights Reserved
-        </div>
+        </div> */}
       </div>
     </div>
   )

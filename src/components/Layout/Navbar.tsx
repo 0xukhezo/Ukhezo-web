@@ -6,11 +6,14 @@ import Image from "next/image"
 import { Disclosure } from "@headlessui/react"
 // Images
 import Logo from "../../../public/Logo.png"
+import { NavigationType } from "@/types/Types"
+import { navigation } from "../../../constants/Constants"
 
 export default function Navbar() {
   const router = useRouter()
 
   return (
+    // sticky top-0 z-50
     <Disclosure as="nav" id="navbar" className="primary-navigation">
       <>
         <div className="mx-auto pt-5 bg-black hidden sm:block">
@@ -29,30 +32,16 @@ export default function Navbar() {
             <div className="flex items-center ml-28">
               <div className="hidden sm:ml-6 md:block">
                 <div className="flex space-x-10 text-white ">
-                  <Link
-                    href={router.route !== "/" ? "/#me" : "#me"}
-                    className="underline-hover hover:text-pink"
-                  >
-                    Me
-                  </Link>
-                  <Link
-                    href={router.route !== "/" ? "/#awards" : "#awards"}
-                    className="underline-hover hover:text-pink"
-                  >
-                    Awards
-                  </Link>
-                  <Link
-                    href={router.route !== "/" ? "/#stack" : "#stack"}
-                    className="underline-hover hover:text-pink"
-                  >
-                    Stack
-                  </Link>{" "}
-                  <Link
-                    href={router.route !== "/" ? "/#porfolio" : "#porfolio"}
-                    className="underline-hover hover:text-pink"
-                  >
-                    Porfolio
-                  </Link>
+                  {navigation.map((link: NavigationType) => {
+                    return (
+                      <Link
+                        href={router.route !== "/" ? `/${link.href}` : `${link.href}`}
+                        className="underline-hover hover:text-pink"
+                      >
+                        {link.name}
+                      </Link>
+                    )
+                  })}
                 </div>
               </div>
             </div>
@@ -75,10 +64,16 @@ export default function Navbar() {
         </div>
         <div className="md:hidden fixed inset-x-0 bottom-0 w-full z-50 ">
           <div className="mx-5 flex items-center justify-between mb-[25px] bg-black text-white p-5 rounded-lg border-white border-1">
-            <Link href={router.route !== "/" ? "/#me" : "#me"}>Me</Link>
-            <Link href={router.route !== "/" ? "/#awards" : "#awards"}>Awards</Link>
-            <Link href={router.route !== "/" ? "/#porfolio" : "#porfolio"}>Porfolio</Link>
-            <Link href={router.route !== "/" ? "/#stack" : "#stack"}>Stack</Link>
+            {navigation.map((link: NavigationType) => {
+              return (
+                <Link
+                  href={router.route !== "/" ? `/${link.href}` : `${link.href}`}
+                  className="underline-hover hover:text-pink"
+                >
+                  {link.name}
+                </Link>
+              )
+            })}
           </div>
         </div>
       </>

@@ -1,3 +1,8 @@
+// Images
+import TwitterDark from "../public/TwitterDark.svg"
+import TelegramDark from "../public/TelegramDark.svg"
+import LensDark from "../public/LensDark.svg"
+import GithubDark from "../public/GithubDark.svg"
 import DragonStake from "../public/Logo.png"
 
 export const projects = [
@@ -63,4 +68,18 @@ export const poaps = [
   "https://assets.poap.xyz/visit-crypto-plaza-40-madrid-2023-2023-logo-1675327614695.gif",
   "https://assets.poap.xyz/crypto-plaza-forum22-2022-logo-1668677321483.gif",
   "https://assets.poap.xyz/youve-met-mircala-from-crypto-plaza-in-2022-2022-logo-1656605094359.png",
+]
+
+export const navigation = [
+  { name: "Me", href: "#me" },
+  { name: "Awards", href: "#awards" },
+  { name: "Stack", href: "#stack" },
+  { name: "Porfolio", href: "#porfolio" },
+]
+
+export const footerNavigation = [
+  { src: TwitterDark.src, href: "https://twitter.com/0xUkhezo" },
+  { src: TelegramDark.src, href: "https://t.me/Ukhezo" },
+  { src: LensDark.src, href: "https://hey.xyz/u/ukhezo" },
+  { src: GithubDark.src, href: "https://github.com/0xukhezo" },
 ]
