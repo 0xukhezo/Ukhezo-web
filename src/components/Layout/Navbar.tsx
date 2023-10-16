@@ -6,7 +6,9 @@ import Image from "next/image"
 import { Disclosure } from "@headlessui/react"
 // Images
 import Logo from "../../../public/Logo.png"
+// Types
 import { NavigationType } from "@/types/Types"
+// Constants
 import { navigation } from "../../../constants/Constants"
 
 export default function Navbar() {

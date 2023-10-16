@@ -2,7 +2,7 @@
 import React, { useEffect, useRef } from "react"
 // Next
 import Image from "next/image"
-
+// Constants
 import { poaps } from "../../../constants/Constants"
 
 function Poaps() {

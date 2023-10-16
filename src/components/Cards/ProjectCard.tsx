@@ -6,6 +6,7 @@ import Logo from "../../../public/Logo.png"
 import Image from "next/image"
 // Utils
 import { getObserver } from "@/utils/GetObserver"
+// Types
 import { ProjectType } from "@/types/Types"
 
 interface ProjectCardProps {

@@ -1,6 +1,10 @@
+// React
 import React from "react"
+// Constants
 import { projects } from "../../../constants/Constants"
+// Components
 import ProjectCard from "../Cards/ProjectCard"
+// Types
 import { ProjectType } from "@/types/Types"
 
 export default function Projects() {

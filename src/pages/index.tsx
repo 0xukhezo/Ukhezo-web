@@ -1,5 +1,5 @@
 // React
-import React, { useEffect } from "react"
+import React from "react"
 // Components
 import Navbar from "@/components/Layout/Navbar"
 import Footer from "@/components/Layout/Footer"

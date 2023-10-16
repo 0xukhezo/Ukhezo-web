@@ -3,7 +3,9 @@ import React from "react"
 // Next
 import Image from "next/image"
 import { useRouter } from "next/router"
+// Constants
 import { footerNavigation } from "../../../constants/Constants"
+// Types
 import { FooterNavigationType } from "@/types/Types"
 
 export default function Footer() {
