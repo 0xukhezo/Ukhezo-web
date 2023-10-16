@@ -19,7 +19,8 @@ const config: Config = {
         treeDesktop: "1128px",
       },
       fontFamily: {
-        spectral: ["Spectral", "regular"],
+        anton: ["Anton", "normal"],
+        bitter: ["Bitter", "normal"],
       },
     },
   },

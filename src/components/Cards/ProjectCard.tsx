@@ -37,7 +37,6 @@ export default function ProjectCard({ index, project }: ProjectCardProps) {
         index % 2 !== 1 ? "lg:pr-10" : "lg:pl-10"
       } lg:my-20 py-5 lg:max-h-[500px] flex lg:flex-row flex-col cardProjectStart`}
     >
-      {" "}
       <Image
         src={Logo.src}
         alt="Your Company"
@@ -59,8 +58,8 @@ export default function ProjectCard({ index, project }: ProjectCardProps) {
         }
       />
       <div className="text-white lg:text-start my-auto projectTextStart lg:max-h-[400px] mt-4 ">
-        <h1 className="font-semibold text-4xl mb-4">{project.title}</h1>
-        <span className="text-lg">{project.description}</span>
+        <h1 className="font-semibold text-4xl mb-4 font-anton tracking-wider">{project.title}</h1>
+        <span className="font-bitter text-xl">{project.description}</span>
       </div>
       <Image
         src={Logo.src}
