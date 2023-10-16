@@ -9,7 +9,7 @@ import { ProjectType } from "@/types/Types"
 
 export default function Projects() {
   return (
-    <div className="text-white text-center px-10" id="porfolio">
+    <div className="text-white text-center px-10 mt-40" id="porfolio">
       <h1 className="font-semibold text-5xl py-4 font-anton tracking-widest">Porfolio</h1>
       <div className="max-w-[800px] mx-auto mt-[40px] lg:mb-40 font-bitter text-xl">
         Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem

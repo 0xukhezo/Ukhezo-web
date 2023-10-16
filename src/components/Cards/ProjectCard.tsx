@@ -37,7 +37,7 @@ export default function ProjectCard({ index, project }: ProjectCardProps) {
       <section
         className={`flex text-center rounded-xl ${
           index % 2 !== 1 ? "lg:pr-10" : "lg:pl-10"
-        } lg:my-20 py-5 lg:max-h-[500px] flex lg:flex-row flex-col cardProjectStart`}
+        } lg:my-20 py-5 lg:max-h-[500px] flex lg:flex-row flex-col cardProjectStart hover:shadow-pink hover:shadow-xl hover:border-pink`}
       >
         <Image
           src={Logo.src}

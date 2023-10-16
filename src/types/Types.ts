@@ -14,3 +14,9 @@ export type FooterNavigationType = {
   src: string
   href: string
 }
+export type AwardType = {
+  title: string
+  href: string
+  winners: string[]
+  image: string
+}
