@@ -13,8 +13,10 @@ interface AwardCardProps {
 export default function AwardCard({ award, index }: AwardCardProps) {
   return (
     <div
-      className={`flex flex-row my-10 mx-auto ${
-        index === 2 && "lg:col-span-2"
+      className={`flex flex-row my-10 mx-auto  ${index === 0 && "hiddenShowLeft"} ${
+        index === 1 && "hiddenShowRight"
+      } ${
+        index === 2 && "lg:col-span-2 hiddenShowUp"
       } border-1 border-black items-center rounded-xl bg-gray-900 hover:shadow-pink hover:shadow-xl hover:border-pink`}
     >
       <a className="flex px-10 py-6" href={award.href} target="_blank">

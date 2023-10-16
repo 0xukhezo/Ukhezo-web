@@ -4,8 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 @media (max-width: 1024px) {
   .hiddenShowLeft{
     opacity:0;
@@ -75,6 +73,7 @@
     stroke-dashoffset: 0;
   }
 }
+
 @keyframes showLine-animation {
   to {
     stroke-dashoffset: 0;
@@ -279,10 +278,6 @@ html{
    width: 0;
 }
 
-.cardProjectStart{
-    background-color: black;
-}
-
 .logos {
     overflow: hidden;
     padding: 60px 0 0 0;
@@ -323,6 +318,10 @@ html{
         width: 60%;
     }
 
+    .cardProjectStart{
+      background-color: black;
+    }
+
     .cardProjectFinish{
         transition: all 1.4s 1.4s;
         background-color: rgb(15 23 42);
@@ -333,10 +332,23 @@ html{
     .projectImageFinish{   
         scale:1;
     }
+
     .projectTextFinish{
         opacity: 1;
         width: 100%;
     }
-}
 
+    .cardProjectStart{
+      opacity:0;
+      filter: blur(5px);
+      transform: translateY(100%);
+      transition: all 1s 0.2s;
+    }
+
+    .cardProjectFinish{
+      opacity:1;
+      filter: blur(0);
+      transform: translateY(0);
+    }
+}
 
