@@ -55,7 +55,7 @@ export default function Hero() {
         worked at Cryptoplaza as Front-End and developed personal projects in which I expanded my
         skills.
       </div>
-      <Poaps />
+      {/* <Poaps /> */}
     </div>
   )
 }

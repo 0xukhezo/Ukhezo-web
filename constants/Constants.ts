@@ -3,7 +3,10 @@ import TwitterDark from "../public/TwitterDark.svg"
 import TelegramDark from "../public/TelegramDark.svg"
 import LensDark from "../public/LensDark.svg"
 import GithubDark from "../public/GithubDark.svg"
-import DragonStake from "../public/Logo.png"
+import DragonStake from "../public/DragonStake.png"
+import Olivetree from "../public/Olivetree.png"
+import FluidSense from "../public/FluidSense.png"
+
 import Poap1 from "../public/Poaps/Poap1.png"
 import Poap2 from "../public/Poaps/Poap2.gif"
 import Poap3 from "../public/Poaps/Poap3.gif"
@@ -30,33 +33,32 @@ import Poap23 from "../public/Poaps/Poap23.png"
 import Poap24 from "../public/Poaps/Poap24.png"
 
 export const projects = [
-  {
-    title: "Upper Social",
-    description:
-      "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas , las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.",
-    image: DragonStake.src,
-    url: "",
-  },
-
+  // {
+  //   title: "Upper Social",
+  //   description:
+  //     "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas , las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.",
+  //   image: DragonStake.src,
+  //   url: "",
+  // },
   {
     title: "Dragon Stake",
     description:
-      "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas , las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.",
+      "DragonStake is a team focused on blockchain security, specializing in non-custodial staking. We were founded in 2017 and operate validators on some of the top-notch Proof of Stake networks, including Cosmos, Polkadot, Kusama, Kava, Avalanche, Evmos, and soon Ethereum, among others. Our portfolio continues to grow with the blockchain ecosystem while we carefully select the most promising projects.",
     image: DragonStake.src,
     url: "https://dragonstake.io/",
   },
   {
     title: "Olivetree",
     description:
-      "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas , las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.",
-    image: DragonStake.src,
+      "Flexible Peer-to-Syndicate Lending for All Digital Assets. Olivetree is a generalized credit protocol to borrow against any combination of arbitrary assets, free from forced liquidations and oracle dependencies.When you finance with Olivertree, there are no oracle dependencies and you don’t share peer-to-pool risks. Olivetree loans are trustless, arranged directly between the borrower and lenders; risks are isolated and your assets are protected from forced liquidations.",
+    image: Olivetree.src,
     url: "https://www.olivetree.finance/",
   },
   {
     title: "Fluid Sense",
     description:
-      "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas , las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.",
-    image: DragonStake.src,
+      "Get more sales, collects, followers and comments by boosting your content. Reward your loyal community through fluid payments for spreading your content and making you trend.The platform that empowers people and businesses through social media. Let your potential audience discover your brand and create a positive impact by rewarding them.",
+    image: FluidSense.src,
     url: "https://www.fluidsense.xyz/",
   },
 ]
@@ -72,6 +74,7 @@ export const poaps = [
   Poap8.src,
   Poap9.src,
   Poap10.src,
+  Poap11.src,
   Poap12.src,
   Poap13.src,
   Poap14.src,

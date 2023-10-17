@@ -1,7 +1,5 @@
 // React
 import React, { useEffect } from "react"
-// Images
-import Logo from "../../../public/Logo.png"
 // Next
 import Image from "next/image"
 // Utils
@@ -40,7 +38,7 @@ export default function ProjectCard({ index, project }: ProjectCardProps) {
         } lg:my-20 py-5 my-10 lg:my-0 lg:max-h-[500px] flex lg:flex-row flex-col cardProjectStart hover:shadow-pink hover:shadow-xl hover:border-pink`}
       >
         <Image
-          src={Logo.src}
+          src={project.image}
           alt="Your Company"
           width={400}
           height={400}
@@ -51,7 +49,7 @@ export default function ProjectCard({ index, project }: ProjectCardProps) {
           }
         />
         <Image
-          src={Logo.src}
+          src={project.image}
           alt="Your Company"
           width={400}
           height={400}
@@ -59,14 +57,14 @@ export default function ProjectCard({ index, project }: ProjectCardProps) {
             "projectImageStart xl:max-w-[400px] xl:max-h-[400px] max-w-[250px] max-h-[250px] rounded-lg lg:hidden block "
           }
         />
-        <div className="text-white lg:text-start my-auto projectTextStart lg:max-h-[400px] mt-10 lg:mt-4">
-          <h1 className="font-semibold text-4xl mb-4 font-anton tracking-wider">
+        <div className="text-white lg:text-start my-auto projectTextStart lg:max-h-[400px] mt-10">
+          <h1 className="font-semibold text-4xl mb-14 font-anton tracking-wider">
             {project.title}
           </h1>
           <span className="font-bitter text-xl">{project.description}</span>
         </div>
         <Image
-          src={Logo.src}
+          src={project.image}
           alt="Your Company"
           width={400}
           height={400}
