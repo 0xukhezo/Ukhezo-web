@@ -4,6 +4,30 @@ import TelegramDark from "../public/TelegramDark.svg"
 import LensDark from "../public/LensDark.svg"
 import GithubDark from "../public/GithubDark.svg"
 import DragonStake from "../public/Logo.png"
+import Poap1 from "../public/Poaps/Poap1.png"
+import Poap2 from "../public/Poaps/Poap2.gif"
+import Poap3 from "../public/Poaps/Poap3.gif"
+import Poap4 from "../public/Poaps/Poap4.gif"
+import Poap5 from "../public/Poaps/Poap5.png"
+import Poap6 from "../public/Poaps/Poap6.png"
+import Poap7 from "../public/Poaps/Poap7.gif"
+import Poap8 from "../public/Poaps/Poap8.gif"
+import Poap9 from "../public/Poaps/Poap9.png"
+import Poap10 from "../public/Poaps/Poap10.png"
+import Poap11 from "../public/Poaps/Poap11.gif"
+import Poap12 from "../public/Poaps/Poap12.gif"
+import Poap13 from "../public/Poaps/Poap13.gif"
+import Poap14 from "../public/Poaps/Poap14.gif"
+import Poap15 from "../public/Poaps/Poap15.png"
+import Poap16 from "../public/Poaps/Poap16.png"
+import Poap17 from "../public/Poaps/Poap17.png"
+import Poap18 from "../public/Poaps/Poap18.gif"
+import Poap19 from "../public/Poaps/Poap19.png"
+import Poap20 from "../public/Poaps/Poap20.png"
+import Poap21 from "../public/Poaps/Poap21.png"
+import Poap22 from "../public/Poaps/Poap22.png"
+import Poap23 from "../public/Poaps/Poap23.png"
+import Poap24 from "../public/Poaps/Poap24.png"
 
 export const projects = [
   {
@@ -38,37 +62,29 @@ export const projects = [
 ]
 
 export const poaps = [
-  "https://assets.poap.xyz/f6fde30c-c4ea-43ee-8bf2-a70a8ada0dc9.png",
-  "https://assets.poap.xyz/lens-40-eth-ny-2023-logo-1694707398195.gif",
-  "https://assets.poap.xyz/aave-40-eth-nyc-2023-logo-1694707220879.gif",
-  // "https://assets.poap.xyz/04d67083-f299-46ec-91a4-8bb0a7e57591.png",
-  "https://assets.poap.xyz/669857af-671e-4ea4-8574-dfd087a0f7fe.gif",
-  // "https://assets.poap.xyz/gnosis-sponsor-booth-at-ethglobal-nyc-2023!-2023-logo-1695213436988.png",
-  "https://assets.poap.xyz/03bb6c20-a8ea-4d0e-9dc5-09d483d2896d.png",
-  "https://assets.poap.xyz/e064c761-41bb-40f3-8d33-8aac61413caf.png",
-  // "https://assets.poap.xyz/2c628ee5-1a9f-462a-bd86-e057b4f7aac8.gif",
-  "https://assets.poap.xyz/4a126aa0-68b9-4c9f-a978-3feee23d4af7.gif",
-  "https://assets.poap.xyz/69d45c63-bf37-4c66-9b5a-55e014350f9e.gif",
-  "https://assets.poap.xyz/93ba8f13-30f9-4b22-aa02-b2e95a891a17.png",
-  "https://assets.poap.xyz/2fd0ae88-9897-43bb-9122-d2b7ab43c479.png",
-  "https://assets.poap.xyz/raave-lisbon-placeholder-2023-logo-1683746546787.gif",
-  "https://assets.poap.xyz/aave-40-eth-lisbon-2023-logo-1683715280139.gif",
-  "https://assets.poap.xyz/10d70a3a-3d91-49c9-a2d6-4b5c32aa4ad5.gif",
-  "https://assets.poap.xyz/lens-40-eth-lisbon-2023-logo-1683715471383.gif",
-  "https://assets.poap.xyz/0d814a53-d5bd-4e8a-bb22-2e3abe9f4938.png",
-  "https://assets.poap.xyz/91a03d3e-29ac-433f-b361-3c13b73dda4a.png",
-  "https://assets.poap.xyz/gnosis-at-ethglobal-lisbon-2023-logo-1683806877289.png",
-  "https://assets.poap.xyz/c913a4a6-b867-40c5-b092-4d80783db7e3.gif",
-  // "https://assets.poap.xyz/cbb7d32b-50b9-4f5f-a8f3-24efd595e8bc.gif",
-  "https://assets.poap.xyz/e59179b2-4c89-4109-92dc-5ec0d232eb6b.png",
-  "https://assets.poap.xyz/youve-met-juancamp1987eth-at-ethlisbon-2023-2023-logo-1683497503437.png",
-  "https://assets.poap.xyz/1724558e-f4e0-4275-a47a-38cfbd11ace7.png",
-  "https://assets.poap.xyz/youve-met-josegarcialegalens-march-2023-2023-logo-1677676269819.png",
-  "https://assets.poap.xyz/dc3ada-mundial-de-la-enfermedades-raras-2023-logo-1677582573439.png",
-  "https://assets.poap.xyz/conociendo-cosmos3a-cosmos-day-232-2023-logo-1675095780868.png",
-  "https://assets.poap.xyz/visit-crypto-plaza-40-madrid-2023-2023-logo-1675327614695.gif",
-  "https://assets.poap.xyz/crypto-plaza-forum22-2022-logo-1668677321483.gif",
-  "https://assets.poap.xyz/youve-met-mircala-from-crypto-plaza-in-2022-2022-logo-1656605094359.png",
+  Poap1.src,
+  Poap2.src,
+  Poap3.src,
+  Poap4.src,
+  Poap5.src,
+  Poap6.src,
+  Poap7.src,
+  Poap8.src,
+  Poap9.src,
+  Poap10.src,
+  Poap12.src,
+  Poap13.src,
+  Poap14.src,
+  Poap15.src,
+  Poap16.src,
+  Poap17.src,
+  Poap18.src,
+  Poap19.src,
+  Poap20.src,
+  Poap21.src,
+  Poap22.src,
+  Poap23.src,
+  Poap24.src,
 ]
 
 export const navigation = [
