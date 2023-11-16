@@ -13,20 +13,19 @@ import { navigation } from "../../../constants/Constants"
 
 export default function Navbar() {
   const router = useRouter()
-
+  console.log(navigation, router)
   return (
-    // sticky top-0 z-50
     <Disclosure as="nav" id="navbar" className="primary-navigation">
       <>
-        <div className="mx-auto pt-5 bg-black hidden sm:block">
-          <div className="flex h-24 items-center mx-10 justify-evenly">
+        <div className="mx-auto pt-3 bg-mainBackground hidden sm:block">
+          <div className="flex items-center mx-10 justify-evenly">
             <div className="flex-shrink-0">
               <Link href="/">
                 <Image
                   src={Logo.src}
                   alt="Your Company"
-                  width={86}
-                  height={86}
+                  width={27}
+                  height={27}
                   className="logo rounded-full hidden sm:block"
                 />
               </Link>
@@ -39,7 +38,7 @@ export default function Navbar() {
                       <Link
                         href={router.route !== "/" ? `/${link.href}` : `${link.href}`}
                         key={link.href}
-                        className="underline-hover hover:text-pink"
+                        className={router.asPath !== link.href ? "navLink" : "text-white"}
                       >
                         {link.name}
                       </Link>
@@ -54,13 +53,10 @@ export default function Navbar() {
                   onClick={() =>
                     router.push("mailto:ukhezo.web3@gmail.com?subject=Contact%20ukhezo%20")
                   }
-                  className="underline-hover hover:text-pink"
+                  className="bg-lightGray rounded-xl px-8 py-2.5 font-bold navButton"
                 >
-                  Contact Me
+                  Let's talk
                 </button>
-                <a href="https://twitter.com/0xUkhezo" target="_blank">
-                  <button className="underline-hover hover:text-pink">Join my X</button>
-                </a>
               </div>
             </div>
           </div>

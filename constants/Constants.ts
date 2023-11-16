@@ -91,10 +91,10 @@ export const poaps = [
 ]
 
 export const navigation = [
-  { name: "Me", href: "#me" },
-  { name: "Awards", href: "#awards" },
-  { name: "Stack", href: "#stack" },
-  { name: "Porfolio", href: "#porfolio" },
+  { name: "Home", href: "/" },
+  { name: "About", href: "/about" },
+  { name: "Work", href: "/work" },
+  { name: "Contact", href: "/contact" },
 ]
 
 export const footerNavigation = [

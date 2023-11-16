@@ -9,15 +9,10 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        red: "#fc0407",
-        pink: "#fd16f9",
-        purple: "#6506d8",
+        lightGray: "#323232",
+        mainBackground: "#0f0f0f",
       },
       borderWidth: { 1: "1px" },
-      screens: {
-        roadmap: "907px",
-        treeDesktop: "1128px",
-      },
       fontFamily: {
         anton: ["Anton", "normal"],
         bitter: ["Bitter", "normal"],
