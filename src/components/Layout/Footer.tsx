@@ -4,7 +4,7 @@ import React from "react"
 import Image from "next/image"
 import { useRouter } from "next/router"
 // Constants
-import { footerNavigation } from "../../../constants/Constants"
+// import { footerNavigation } from "../../../constants/Constants"
 // Types
 import { FooterNavigationType } from "@/types/Types"
 
@@ -29,13 +29,13 @@ export default function Footer() {
           <div className="ml-10">
             <h1 className="md:mb-[25px] mb-[12px] font-semibold">Follow Me</h1>
             <div className="flex flex-row space-x-4">
-              {footerNavigation.map((link: FooterNavigationType) => {
+              {/* {footerNavigation.map((link: FooterNavigationType) => {
                 return (
                   <a href={link.href} target="_blank" key={link.href}>
                     <Image width={24} height={24} alt="Token Image" src={link.src} />
                   </a>
                 )
-              })}
+              })} */}
             </div>
           </div>
         </div>

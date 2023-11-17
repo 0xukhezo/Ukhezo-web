@@ -4,17 +4,24 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
 
 html{
   scroll-behavior: smooth;
   scroll-padding: var(--scroll-padding, 5rem);
   overflow-x: hidden;
-  max-width: 1800px;
+  max-width: 1700px;
   margin: auto;
   background-color: #0f0f0f;
   color: white;
 }
-
 
 .navLink {
   color: #676767;
@@ -31,4 +38,28 @@ html{
 .navButton:hover {
   color: #323232;
   background-color: white;
+}
+
+.logos-container {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.logos-slider {
+  display: inline-flex;
+  animation: slide 8s linear infinite;
+}
+
+.shower-text {
+  white-space: nowrap; 
+  margin-right: 26px; 
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
