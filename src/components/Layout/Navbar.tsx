@@ -85,7 +85,7 @@ export default function Navbar({ page }: NavbarProps) {
           </div>
         </>
       </Disclosure>
-      <main className="mt-[80px]">{page}</main>
+      <main className="my-[80px]">{page}</main>
       <Footer />
     </>
   )
