@@ -9,15 +9,22 @@ type HomeCardSquareProps = {
   h2: string
   h1: string
   href: string
+  classNameMain: string
 }
 
-export default function HomeCardSquare({ image, h2, h1, href }: HomeCardSquareProps) {
+export default function HomeCardSquare({
+  image,
+  h2,
+  h1,
+  href,
+  classNameMain,
+}: HomeCardSquareProps) {
   const [isHovered, setIsHovered] = useState(false)
 
   return (
     <Link href={href}>
       <div
-        className="rounded-xl bg-lightGray flex"
+        className={classNameMain}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >

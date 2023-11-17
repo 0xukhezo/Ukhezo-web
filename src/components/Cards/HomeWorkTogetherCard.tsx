@@ -9,9 +9,9 @@ export default function HomeWorkTogetherCard() {
   const [isHovered, setIsHovered] = useState(false)
 
   return (
-    <Link href="/services">
+    <Link href="/contact">
       <div
-        className="rounded-xl bg-lightGray  h-full"
+        className="rounded-xl bg-gradient-to-tl from-[#3f3f3f] to-[#141414]  h-full"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
