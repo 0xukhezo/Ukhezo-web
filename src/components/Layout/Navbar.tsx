@@ -75,7 +75,7 @@ export default function Navbar({ page }: NavbarProps) {
                   <Link
                     href={router.route !== "/" ? `/${link.href}` : `${link.href}`}
                     key={link.href}
-                    className="underline-hover hover:text-pink"
+                    className={router.asPath !== link.href ? "navLink" : "text-white"}
                   >
                     {link.name}
                   </Link>
@@ -85,7 +85,7 @@ export default function Navbar({ page }: NavbarProps) {
           </div>
         </>
       </Disclosure>
-      <main className="my-[80px]">{page}</main>
+      <main className="mt-[80px] mb-[40px]">{page}</main>
       <Footer />
     </>
   )
