@@ -3,6 +3,7 @@ import HomeAboutCard from "../Cards/HomeAboutCard"
 import HomeCardSquare from "../Cards/HomeCardSquare"
 import HomeFeatureShowerCard from "../Cards/HomeFeatureShowerCard"
 import Logo from "../../../public/Logo.png"
+import HomeServicesCard from "../Cards/HomeServicesCard"
 
 export default function Home() {
   return (
@@ -36,12 +37,7 @@ export default function Home() {
           />
         </div>
         <div className="col-span-2 row-span-3">
-          <HomeCardSquare
-            image={Logo.src}
-            h1={"Credentials"}
-            h2={"MORE ABOUT ME"}
-            href="/credentials"
-          />
+          <HomeServicesCard />
         </div>
         <div className="row-span-3">
           <HomeCardSquare image={Logo.src} h1={"Projects"} h2={"SHOWCASE"} href="/works" />
