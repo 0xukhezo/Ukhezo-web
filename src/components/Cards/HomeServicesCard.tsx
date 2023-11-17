@@ -14,35 +14,35 @@ export default function HomeServicesCard() {
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
-        <div className="flex flex-col gap-y-[12px] items-center w-full px-8 py-4 h-full">
-          <div className="grid grid-cols-4 w-full px-6 mt-10">
+        <div className="flex flex-col justify-between gap-y-[12px] items-center w-full px-8 py-4 h-full">
+          <div className="grid grid-cols-4 w-full px-6 mt-10 ">
             <Image
               height={40}
               width={40}
               src={Star.src}
               alt="Alvaro Teran Image"
-              className="rounded-tl-3xl rounded-br-3xl"
+              className="mx-auto"
             />
             <Image
               height={40}
               width={40}
               src={Star.src}
               alt="Alvaro Teran Image"
-              className="rounded-tl-3xl rounded-br-3xl"
+              className="mx-auto"
             />
             <Image
               height={40}
               width={40}
               src={Star.src}
               alt="Alvaro Teran Image"
-              className="rounded-tl-3xl rounded-br-3xl"
+              className="mx-auto"
             />
             <Image
               height={40}
               width={40}
               src={Star.src}
               alt="Alvaro Teran Image"
-              className="rounded-tl-3xl rounded-br-3xl"
+              className="mx-auto"
             />
           </div>
 
