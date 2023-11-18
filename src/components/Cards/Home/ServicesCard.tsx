@@ -4,7 +4,7 @@ import Link from "next/link"
 
 import Star from "../../../public/Star.svg"
 
-export default function HomeServicesCard() {
+export default function ServicesCard() {
   const [isHovered, setIsHovered] = useState(false)
 
   return (

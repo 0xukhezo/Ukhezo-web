@@ -4,7 +4,7 @@ import Link from "next/link"
 import Logo from "../../../public/Logo.png"
 import Star from "../../../public/Star.svg"
 
-export default function HomeAboutCard() {
+export default function AboutCard() {
   const [isHovered, setIsHovered] = useState(false)
 
   return (

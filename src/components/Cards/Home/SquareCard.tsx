@@ -4,7 +4,7 @@ import Link from "next/link"
 
 import Star from "../../../public/Star.svg"
 
-type HomeCardSquareProps = {
+type SquarePropsCard = {
   image?: string
   h2: string
   h1: string
@@ -12,13 +12,7 @@ type HomeCardSquareProps = {
   classNameMain: string
 }
 
-export default function HomeCardSquare({
-  image,
-  h2,
-  h1,
-  href,
-  classNameMain,
-}: HomeCardSquareProps) {
+export default function SquareCard({ image, h2, h1, href, classNameMain }: SquarePropsCard) {
   const [isHovered, setIsHovered] = useState(false)
   const [haveImage, setHaveImage] = useState(false)
   const [loading, setLoading] = useState(false)

@@ -2,7 +2,7 @@ import React from "react"
 import Image from "next/image"
 import SeparatorImage from "../../../public/Separator.png"
 
-export default function HomeFeatureShowerCard() {
+export default function FeatureShowerCard() {
   return (
     <div className="logos-container rounded-full h-full bg-lightGray items-center flex">
       <div className="logos-slider">

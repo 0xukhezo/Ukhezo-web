@@ -3,7 +3,7 @@ import Image from "next/image"
 
 import Logo from "../../../public/Logo.png"
 
-export default function AboutCardImage() {
+export default function ImageCard() {
   return (
     <div className="rounded-3xl bg-gradient-to-b from-[#3f3f3f] to-[#141414] flex justify-center p-7 h-full">
       <Image

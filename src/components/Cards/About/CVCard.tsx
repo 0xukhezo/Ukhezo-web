@@ -1,16 +1,15 @@
 import { cvType } from "@/types/Types"
 import React, { useState } from "react"
 
-type AboutCVCardProps = {
+type CVCardProps = {
   info: cvType[]
   className: string
 }
 
-export default function AboutCVCard({ info, className }: AboutCVCardProps) {
+export default function CVCard({ info, className }: CVCardProps) {
   const [prevIndex, setPrevIndex] = useState<number>(0)
 
   const handleClickNextIndex = () => {
-    console.log((prevIndex + 1) * 3 > info.length)
     if (prevIndex + 3 <= info.length) {
       setPrevIndex(prevIndex + 3)
     }

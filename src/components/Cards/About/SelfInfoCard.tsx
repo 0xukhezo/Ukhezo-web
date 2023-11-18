@@ -3,7 +3,7 @@ import Image from "next/image"
 
 import Icon from "../../../public/Icon3.png"
 
-export default function AboutSelfInfo() {
+export default function SelfInfoCard() {
   return (
     <div className="rounded-3xl bg-gradient-to-bl from-[#3f3f3f] to-[#141414]  h-full px-8">
       <Image height={32} width={32} src={Icon.src} alt="Star" />
