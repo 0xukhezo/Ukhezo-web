@@ -6,7 +6,7 @@ import { useRouter } from "next/router"
 // Images
 import Logo from "../../../public/Logo.png"
 // Types
-import { FooterNavigationType, NavigationType } from "@/types/Types"
+import { NavigationType } from "@/types/Types"
 import { navigation } from "../../../constants/Constants"
 import Link from "next/link"
 
