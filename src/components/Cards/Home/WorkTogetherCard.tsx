@@ -11,7 +11,7 @@ export default function HomeWorkTogetherCard() {
   return (
     <Link href="/contact">
       <div
-        className="rounded-3xl bg-gradient-to-tl from-[#3f3f3f] to-[#141414]  h-full"
+        className="rounded-3xl bg-gradient-to-br from-[#3f3f3f] to-[#141414]  h-full"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
