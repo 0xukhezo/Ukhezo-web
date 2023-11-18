@@ -48,7 +48,7 @@ export default function HomeCardSquare({
                 className="rounded-tl-3xl rounded-br-3xl"
               />
             ) : (
-              <div className="rounded-xl bg-gradient-to-b from-[#3f3f3f] to-[#141414] flex  w-full p-2.5 justify-around">
+              <div className="rounded-3xl bg-gradient-to-b from-[#3f3f3f] to-[#141414] flex  w-full p-2.5 justify-around">
                 <a
                   href="https://github.com/0xukhezo"
                   target="_blank"

@@ -10,8 +10,8 @@ export default function HomeFeatureShowerCard() {
           <Image
             src={SeparatorImage}
             alt="Separator"
-            width={10}
-            height={10}
+            width={12}
+            height={12}
             className="mx-2"
             loading="eager"
           />{" "}
@@ -19,8 +19,8 @@ export default function HomeFeatureShowerCard() {
           <Image
             src={SeparatorImage}
             alt="Separator"
-            width={10}
-            height={10}
+            width={12}
+            height={12}
             className="mx-2"
             loading="eager"
           />{" "}
@@ -28,8 +28,8 @@ export default function HomeFeatureShowerCard() {
           <Image
             src={SeparatorImage}
             alt="Separator"
-            width={10}
-            height={10}
+            width={12}
+            height={12}
             className="mx-2"
             loading="eager"
           />{" "}
@@ -39,8 +39,8 @@ export default function HomeFeatureShowerCard() {
           <Image
             src={SeparatorImage}
             alt="Separator"
-            width={10}
-            height={10}
+            width={12}
+            height={12}
             className="mx-2"
             loading="eager"
           />{" "}
@@ -48,8 +48,8 @@ export default function HomeFeatureShowerCard() {
           <Image
             src={SeparatorImage}
             alt="Separator"
-            width={10}
-            height={10}
+            width={12}
+            height={12}
             className="mx-2"
             loading="eager"
           />{" "}
@@ -57,8 +57,8 @@ export default function HomeFeatureShowerCard() {
           <Image
             src={SeparatorImage}
             alt="Separator"
-            width={10}
-            height={10}
+            width={12}
+            height={12}
             className="mx-2"
             loading="eager"
           />{" "}

@@ -10,7 +10,7 @@ export default function HomeAboutCard() {
   return (
     <Link href="/about">
       <div
-        className="rounded-xl bg-gradient-to-br from-[#3f3f3f] to-[#141414] flex"
+        className="rounded-3xl bg-gradient-to-br from-[#3f3f3f] to-[#141414] flex"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >

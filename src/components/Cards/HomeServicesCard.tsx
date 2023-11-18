@@ -10,7 +10,7 @@ export default function HomeServicesCard() {
   return (
     <Link href="/services">
       <div
-        className="rounded-xl bg-[#212121] flex justify-around h-full"
+        className="rounded-3xl bg-[#212121] flex justify-around h-full"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
