@@ -2,8 +2,8 @@ import React, { useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
 
-import Icon from "../../../public/Icon3.png"
-import Star from "../../../public/Star.svg"
+import Icon from "../../../../public/Icon3.png"
+import Star from "../../../../public/Star.svg"
 
 export default function HomeWorkTogetherCard() {
   const [isHovered, setIsHovered] = useState(false)

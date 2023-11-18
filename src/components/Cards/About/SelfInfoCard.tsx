@@ -1,7 +1,7 @@
 import React from "react"
 import Image from "next/image"
 
-import Icon from "../../../public/Icon3.png"
+import Icon from "../../../../public/Icon3.png"
 
 export default function SelfInfoCard() {
   return (

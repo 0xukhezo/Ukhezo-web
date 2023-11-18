@@ -2,7 +2,7 @@ import { ReactElement, useEffect, useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
 
-import Star from "../../../public/Star.svg"
+import Star from "../../../../public/Star.svg"
 
 type SquarePropsCard = {
   image?: string

@@ -1,24 +1,24 @@
 import React from "react"
-import HomeAboutCard from "../Cards/HomeAboutCard"
-import HomeCardSquare from "../Cards/HomeCardSquare"
-import HomeFeatureShowerCard from "../Cards/HomeFeatureShowerCard"
+import AboutCard from "../Cards/Home/AboutCard"
+import SquareCard from "../Cards/Home/SquareCard"
+import FeatureShowerCard from "../Cards/Home/FeatureShowerCard"
 import Logo from "../../../public/Logo.png"
-import HomeServicesCard from "../Cards/HomeServicesCard"
-import HomeWorkTogetherCard from "../Cards/HomeWorkTogetherCard"
-import HomeExperienceCard from "../Cards/HomeExperienceCard"
+import ServicesCard from "../Cards/Home/ServicesCard"
+import WorkTogetherCard from "../Cards/Home/WorkTogetherCard"
+import ExperienceCard from "../Cards/Home/ExperienceCard"
 
 export default function Home() {
   return (
     <main className="grid gap-y-[24px]">
       <div className="grid grid-cols-4 grid-rows-4 gap-[24px]">
         <div className="col-span-2 row-span-4 ">
-          <HomeAboutCard />
+          <AboutCard />
         </div>
         <div className="col-span-2">
-          <HomeFeatureShowerCard />
+          <FeatureShowerCard />
         </div>
         <div className="row-span-3">
-          <HomeCardSquare
+          <SquareCard
             image={Logo.src}
             h1={"Credentials"}
             h2={"MORE ABOUT ME"}
@@ -27,7 +27,7 @@ export default function Home() {
           />
         </div>
         <div className="row-span-3">
-          <HomeCardSquare
+          <SquareCard
             image={Logo.src}
             h1={"Projects"}
             h2={"SHOWCASE"}
@@ -37,7 +37,7 @@ export default function Home() {
         </div>
       </div>{" "}
       <div className="grid grid-cols-4 gap-[24px] min-h-[240px]">
-        <HomeCardSquare
+        <SquareCard
           image={Logo.src}
           h1={"Credentials"}
           h2={"MORE ABOUT ME"}
@@ -46,10 +46,10 @@ export default function Home() {
         />
 
         <div className="col-span-2 ">
-          <HomeServicesCard />
+          <ServicesCard />
         </div>
 
-        <HomeCardSquare
+        <SquareCard
           h1={"Projects"}
           h2={"SHOWCASE"}
           href="/contact"
@@ -58,10 +58,10 @@ export default function Home() {
       </div>{" "}
       <div className="grid grid-cols-4 grid-rows-3 gap-[24px]">
         <div className="col-span-2 row-span-3">
-          <HomeExperienceCard />
+          <ExperienceCard />
         </div>
         <div className="col-span-2 row-span-3">
-          <HomeWorkTogetherCard />
+          <WorkTogetherCard />
         </div>
       </div>
     </main>

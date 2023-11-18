@@ -1,6 +1,6 @@
 import React from "react"
 import Image from "next/image"
-import SeparatorImage from "../../../public/Separator.png"
+import SeparatorImage from "../../../../public/Separator.png"
 
 export default function FeatureShowerCard() {
   return (

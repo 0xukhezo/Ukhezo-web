@@ -2,7 +2,7 @@ import { useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
 
-import Star from "../../../public/Star.svg"
+import Star from "../../../../public/Star.svg"
 
 export default function ServicesCard() {
   const [isHovered, setIsHovered] = useState(false)
