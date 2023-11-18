@@ -10,36 +10,36 @@ export default function HomeServicesCard() {
   return (
     <Link href="/services">
       <div
-        className="rounded-xl bg-lightGray flex justify-around h-full"
+        className="rounded-xl bg-[#212121] flex justify-around h-full"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
         <div className="flex flex-col justify-between gap-y-[12px] items-center w-full px-8 py-4 h-full">
           <div className="grid grid-cols-4 w-full px-6 mt-10 ">
             <Image
-              height={40}
-              width={40}
+              height={80}
+              width={80}
               src={Star.src}
               alt="Alvaro Teran Image"
               className="mx-auto"
             />
             <Image
-              height={40}
-              width={40}
+              height={80}
+              width={80}
               src={Star.src}
               alt="Alvaro Teran Image"
               className="mx-auto"
             />
             <Image
-              height={40}
-              width={40}
+              height={80}
+              width={80}
               src={Star.src}
               alt="Alvaro Teran Image"
               className="mx-auto"
             />
             <Image
-              height={40}
-              width={40}
+              height={80}
+              width={80}
               src={Star.src}
               alt="Alvaro Teran Image"
               className="mx-auto"
