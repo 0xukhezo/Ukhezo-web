@@ -1,8 +1,8 @@
 export const navigation = [
-  { name: "Home", href: "/" },
-  { name: "About", href: "/about" },
-  { name: "Work", href: "/work" },
-  { name: "Contact", href: "/contact" },
+  { name: "Home", href: "" },
+  { name: "About", href: "about" },
+  { name: "Work", href: "works" },
+  { name: "Contact", href: "contact" },
 ]
 export const cvInfoExperience = [
   { date: "Jul 2023 - Present", title: "Web3 Developer", location: "Freelance" },

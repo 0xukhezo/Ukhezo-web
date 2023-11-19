@@ -24,7 +24,7 @@ export default function Navbar({ page }: NavbarProps) {
     <>
       <Disclosure as="nav" id="navbar" className="primary-navigation">
         <>
-          <div className="mx-auto pt-3 bg-mainBackground hidden sm:block">
+          <div className="mx-auto pt-7 bg-mainBackground hidden sm:block">
             <div className="flex items-center justify-evenly">
               <div className="flex-shrink-0">
                 <Link href="/">
@@ -60,7 +60,7 @@ export default function Navbar({ page }: NavbarProps) {
                     onClick={() =>
                       router.push("mailto:ukhezo.web3@gmail.com?subject=Contact%20ukhezo%20")
                     }
-                    className="bg-lightGray rounded-xl px-8 py-2.5 font-bold navButton"
+                    className="bg-lightGray rounded-2xl px-8 py-2.5 font-bold navButton"
                   >
                     Let's talk
                   </button>
