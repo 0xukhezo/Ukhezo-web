@@ -24,7 +24,6 @@ export default function ContactForm() {
     setMessage(e.target.value)
   }
 
-  console.log(name === "")
   return (
     <main className="mt-10 flex flex-col">
       <input

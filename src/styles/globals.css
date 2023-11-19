@@ -27,6 +27,7 @@ html{
   color: #676767;
   transition: color 0.8s ease;
 }
+
 .navLink:hover {
   color: white;
 }

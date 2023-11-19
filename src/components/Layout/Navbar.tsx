@@ -19,7 +19,7 @@ type NavbarProps = {
 
 export default function Navbar({ page }: NavbarProps) {
   const router = useRouter()
-
+  console.log(router)
   return (
     <>
       <Disclosure as="nav" id="navbar" className="primary-navigation">
@@ -45,7 +45,7 @@ export default function Navbar({ page }: NavbarProps) {
                         <Link
                           href={router.route !== "/" ? `/${link.href}` : `${link.href}`}
                           key={link.href}
-                          className={router.asPath !== link.href ? "navLink" : "text-white"}
+                          className={router.asPath !== `/${link.href}` ? "navLink" : "text-white"}
                         >
                           {link.name}
                         </Link>
@@ -56,26 +56,24 @@ export default function Navbar({ page }: NavbarProps) {
               </div>
               <div className="hidden sm:ml-6 sm:block">
                 <div className="flex space-x-9 text-white items-center">
-                  <button
-                    onClick={() =>
-                      router.push("mailto:ukhezo.web3@gmail.com?subject=Contact%20ukhezo%20")
-                    }
+                  <Link
+                    href="contact"
                     className="bg-lightGray rounded-2xl px-8 py-2.5 font-bold navButton"
                   >
                     Let's talk
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>
           </div>
           <div className="md:hidden fixed inset-x-0 bottom-0 w-full z-50 ">
-            <div className="mx-5 flex items-center justify-between mb-[25px] bg-black text-white p-5 rounded-lg border-white border-1">
+            <div className="mx-5 flex items-center justify-between mb-[25px] p-5 border-1">
               {navigation.map((link: NavigationType) => {
                 return (
                   <Link
                     href={router.route !== "/" ? `/${link.href}` : `${link.href}`}
                     key={link.href}
-                    className={router.asPath !== link.href ? "navLink" : "text-white"}
+                    className={router.asPath !== `/${link.href}` ? "navLink" : "text-white"}
                   >
                     {link.name}
                   </Link>
