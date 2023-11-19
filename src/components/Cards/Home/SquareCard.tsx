@@ -25,7 +25,7 @@ export default function SquareCard({ image, h2, h1, href, classNameMain }: Squar
   }, [])
 
   return (
-    <Link href={href}>
+    <Link href={href} className="h-screen">
       {loading && (
         <div
           className={classNameMain}

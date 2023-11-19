@@ -19,7 +19,7 @@ type NavbarProps = {
 
 export default function Navbar({ page }: NavbarProps) {
   const router = useRouter()
-  console.log(router)
+
   return (
     <>
       <Disclosure as="nav" id="navbar" className="primary-navigation">
@@ -83,7 +83,7 @@ export default function Navbar({ page }: NavbarProps) {
           </div>
         </>
       </Disclosure>
-      <main className="mt-[80px] mb-[40px] w-[1170px] mx-auto">{page}</main>
+      <main className="mt-[80px] mb-[40px] max-w-[1170px] mx-auto">{page}</main>
       <Footer />
     </>
   )
