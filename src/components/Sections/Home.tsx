@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import AboutCard from "../Cards/Home/AboutCard"
 import SquareCard from "../Cards/Home/SquareCard"
 import FeatureShowerCard from "../Cards/Home/FeatureShowerCard"
@@ -8,10 +8,20 @@ import WorkTogetherCard from "../Cards/Home/WorkTogetherCard"
 import ExperienceCard from "../Cards/Home/ExperienceCard"
 
 export default function Home() {
+  const [showElement, setShowElement] = useState(false)
+
+  useEffect(() => {
+    setShowElement(true)
+  }, [])
+
   return (
-    <main className="grid gap-y-[16px] px-10 lg:px-0 w-screen lg:w-fit">
+    <main className="grid gap-y-[16px] px-10 lg:px-0 w-screen lg:w-fit overflow-auto list-view">
       <div className="grid grid-cols-4 grid-rows-4 gap-[16px] ">
-        <div className="lg:col-span-2 col-span-4 row-span-4 ">
+        <div
+          className={`animated-element lg:col-span-2 col-span-4 row-span-4  ${
+            showElement ? "show" : ""
+          }`}
+        >
           <AboutCard />
         </div>
         <div className="lg:col-span-2 col-span-4">
@@ -42,7 +52,7 @@ export default function Home() {
             image={Logo.src}
             h1={"Credentials"}
             h2={"MORE ABOUT ME"}
-            href="/credentials"
+            href="credentials"
             classNameMain="rounded-3xl bg-gradient-to-l from-[#3f3f3f] to-[#141414] flex h-full justify-between"
           />
         </div>
@@ -53,7 +63,7 @@ export default function Home() {
           <SquareCard
             h1={"Projects"}
             h2={"SHOWCASE"}
-            href="/contact"
+            href="contact"
             classNameMain="rounded-3xl bg-gradient-to-r from-[#3f3f3f] to-[#141414] flex h-full"
           />{" "}
         </div>{" "}
