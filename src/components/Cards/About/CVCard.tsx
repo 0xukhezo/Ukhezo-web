@@ -36,7 +36,7 @@ export default function CVCard({ info, className }: CVCardProps) {
       </div>
       {info.slice(prevIndex, prevIndex + 3).map((infoData: cvType) => {
         return (
-          <div className="mt-4">
+          <div className="mt-4" key={infoData.title}>
             <h3 className="text-sm">{infoData.date}</h3>
             <h2 className="my-1 text-lg">{infoData.title}</h2>
             <p className="text-sm">{infoData.location}</p>

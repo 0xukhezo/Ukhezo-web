@@ -85,7 +85,10 @@ export default function Credentials() {
           <h2 className="mb-[40px]">EXPERIENCE</h2>
           {cvInfoExperience.map((info: cvType) => {
             return (
-              <div className="mb-[60px] rounded-3xl bg-gradient-to-b from-[#3f3f3f] to-[#141414] p-8">
+              <div
+                className="mb-[60px] rounded-3xl bg-gradient-to-b from-[#3f3f3f] to-[#141414] p-8"
+                key={info.title}
+              >
                 <h3>{info.date}</h3>
                 <h2 className="my-[12px] text-yellow-500 font-semibold">{info.title}</h2>
                 <h3 className="mb-[6px]">{info.location}</h3>
@@ -98,7 +101,10 @@ export default function Credentials() {
           <h2 className="mb-[40px]">EDUCATION</h2>
           {cvInfoEducation.map((info: cvType) => {
             return (
-              <div className="mb-[60px] rounded-3xl bg-gradient-to-b from-[#3f3f3f] to-[#141414] p-8">
+              <div
+                className="mb-[60px] rounded-3xl bg-gradient-to-b from-[#3f3f3f] to-[#141414] p-8"
+                key={info.title}
+              >
                 <h3>{info.date}</h3>
                 <h2 className="my-[12px] text-yellow-500 font-semibold">{info.title}</h2>
                 <h3 className="mb-[6px]">{info.location}</h3>
@@ -112,7 +118,10 @@ export default function Credentials() {
           <div className="grid grid-cols-2">
             {skills.map((skill: string) => {
               return (
-                <div className="mb-[60px] rounded-3xl bg-gradient-to-b from-[#3f3f3f] to-[#141414] p-8 mr-10">
+                <div
+                  className="mb-[60px] rounded-3xl bg-gradient-to-b from-[#3f3f3f] to-[#141414] p-8 mr-10"
+                  key={skill}
+                >
                   <h3>{skill}</h3>
                   <p>Language for the client side</p>
                 </div>
@@ -124,7 +133,10 @@ export default function Credentials() {
           <h2 className="mb-[40px]">AWARDS</h2>
           {awards.map((award: any) => {
             return (
-              <div className="mb-[60px] rounded-3xl bg-gradient-to-b from-[#3f3f3f] to-[#141414] p-8">
+              <div
+                className="mb-[60px] rounded-3xl bg-gradient-to-b from-[#3f3f3f] to-[#141414] p-8"
+                key={award.title}
+              >
                 <h3>{award.date}</h3>
                 <h2 className="my-[12px]">{award.title}</h2> <h2>PRICES</h2>
                 <div className="flex mt-[12px] items-center gap-x-6">
