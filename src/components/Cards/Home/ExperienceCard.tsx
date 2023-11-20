@@ -10,6 +10,7 @@ export default function ExperienceCard() {
         </>
       ),
       value: 3,
+      prefix: "",
     },
     {
       text: (
@@ -18,6 +19,7 @@ export default function ExperienceCard() {
         </>
       ),
       value: 10,
+      prefix: "+ ",
     },
     {
       text: (
@@ -26,6 +28,7 @@ export default function ExperienceCard() {
         </>
       ),
       value: 7,
+      prefix: "+ ",
     },
   ]
 
@@ -38,7 +41,13 @@ export default function ExperienceCard() {
             key={index}
           >
             <h1 className="font-semibold text-3xl">
-              <CountUp start={0} end={entrance.value} duration={2.8} separator=" " />
+              <CountUp
+                start={0}
+                end={entrance.value}
+                duration={2.8}
+                separator=" "
+                prefix={entrance.prefix}
+              />
             </h1>
             <h2 className="font-semibold">{entrance.text}</h2>
           </div>
