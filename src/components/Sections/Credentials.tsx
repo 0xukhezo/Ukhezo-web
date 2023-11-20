@@ -138,7 +138,7 @@ export default function Credentials() {
                 key={award.title}
               >
                 <h3>{award.date}</h3>
-                <h2 className="my-[12px]">{award.title}</h2> <h2>PRICES</h2>
+                <h2 className="my-[12px]">{award.title}</h2> <h2>PROTOCOLS</h2>
                 <div className="flex mt-[12px] items-center gap-x-6">
                   <div className="rounded-full bg-gradient-to-tl from-[#3f3f3f] to-[#141414] items-center p-4">
                     <Image height={24} width={24} src={Separator.src} alt="Alvaro Teran Image" />

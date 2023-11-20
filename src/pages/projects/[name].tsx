@@ -1,5 +1,14 @@
+import Navbar from "@/components/Layout/Navbar"
+import ProjectDetails from "@/components/Sections/ProjectDetails"
+import { useRouter } from "next/router"
 import React from "react"
 
 export default function ProjectDetailsPage() {
-  return <div>[name]</div>
+  const router = useRouter()
+
+  return (
+    <main>
+      <Navbar page={<ProjectDetails project={router.query.name as string} />} />
+    </main>
+  )
 }

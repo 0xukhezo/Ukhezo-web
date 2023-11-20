@@ -4,7 +4,7 @@ import SelfInfoCard from "../Cards/About/SelfInfoCard"
 import Image from "next/image"
 import SeparatorImage from "../../../public/Separator.png"
 import CVCard from "../Cards/About/CVCard"
-import { cvInfoExperience } from "../../../constants/Constants"
+import { cvInfoEducation, cvInfoExperience } from "../../../constants/Constants"
 import SquareCard from "../Cards/Home/SquareCard"
 import ServicesCard from "../Cards/Home/ServicesCard"
 import Logo from "../../../public/Logo.png"
@@ -50,7 +50,7 @@ export default function About() {
         </div>
         <div className="row-span-4 col-span-2">
           <CVCard
-            info={cvInfoExperience}
+            info={cvInfoEducation}
             className="rounded-3xl bg-gradient-to-tl from-[#3f3f3f] to-[#141414]  h-full py-6 px-10"
           />
         </div>

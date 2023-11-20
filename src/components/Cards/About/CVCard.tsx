@@ -7,34 +7,12 @@ type CVCardProps = {
 }
 
 export default function CVCard({ info, className }: CVCardProps) {
-  const [prevIndex, setPrevIndex] = useState<number>(0)
-
-  const handleClickNextIndex = () => {
-    if (prevIndex + 3 <= info.length) {
-      setPrevIndex(prevIndex + 3)
-    }
-  }
-
-  const handleClickPreviousIndex = () => {
-    if (prevIndex === 0) {
-      setPrevIndex(0)
-    } else {
-      setPrevIndex(prevIndex - 3)
-    }
-  }
-
   return (
     <div className={className}>
       <div className="flex items-center mb-[20px] justify-between">
         <h1>EXPERIENCE</h1>
-        <div>
-          <button onClick={() => handleClickPreviousIndex()} className="mx-4">
-            -
-          </button>
-          <button onClick={() => handleClickNextIndex()}>+</button>
-        </div>
       </div>
-      {info.slice(prevIndex, prevIndex + 3).map((infoData: cvType) => {
+      {info.map((infoData: cvType) => {
         return (
           <div className="mt-4" key={infoData.title}>
             <h3 className="text-sm">{infoData.date}</h3>
