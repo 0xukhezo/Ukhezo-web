@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React from "react"
 import Image from "next/image"
 
 import Logo from "../../../public/Logo.png"
@@ -87,7 +87,7 @@ export default function Credentials() {
             return (
               <div className="mb-[60px] rounded-3xl bg-gradient-to-b from-[#3f3f3f] to-[#141414] p-8">
                 <h3>{info.date}</h3>
-                <h2 className="my-[12px]">{info.title}</h2>
+                <h2 className="my-[12px] text-yellow-500 font-semibold">{info.title}</h2>
                 <h3 className="mb-[6px]">{info.location}</h3>
                 <p>{info.description}</p>
               </div>
@@ -100,7 +100,7 @@ export default function Credentials() {
             return (
               <div className="mb-[60px] rounded-3xl bg-gradient-to-b from-[#3f3f3f] to-[#141414] p-8">
                 <h3>{info.date}</h3>
-                <h2 className="my-[12px]">{info.title}</h2>
+                <h2 className="my-[12px] text-yellow-500 font-semibold">{info.title}</h2>
                 <h3 className="mb-[6px]">{info.location}</h3>
                 <p>{info.description}</p>
               </div>
@@ -128,16 +128,16 @@ export default function Credentials() {
                 <h3>{award.date}</h3>
                 <h2 className="my-[12px]">{award.title}</h2> <h2>PRICES</h2>
                 <div className="flex mt-[12px] items-center gap-x-6">
-                  <div className="rounded-full bg-gradient-to-tl from-[#3f3f3f] to-[#141414] items-center p-4 hover:bg-gradient-to-tl hover:from-white hover:to-white">
+                  <div className="rounded-full bg-gradient-to-tl from-[#3f3f3f] to-[#141414] items-center p-4">
                     <Image height={24} width={24} src={Separator.src} alt="Alvaro Teran Image" />
                   </div>
-                  <div className="rounded-full bg-gradient-to-tl from-[#3f3f3f] to-[#141414] items-center p-4 hover:bg-gradient-to-tl hover:from-white hover:to-white">
+                  <div className="rounded-full bg-gradient-to-tl from-[#3f3f3f] to-[#141414] items-center p-4">
                     <Image height={24} width={24} src={Separator.src} alt="Alvaro Teran Image" />
                   </div>
-                  <div className="rounded-full bg-gradient-to-tl from-[#3f3f3f] to-[#141414] items-center p-4 hover:bg-gradient-to-tl hover:from-white hover:to-white">
+                  <div className="rounded-full bg-gradient-to-tl from-[#3f3f3f] to-[#141414] items-center p-4">
                     <Image height={24} width={24} src={Separator.src} alt="Alvaro Teran Image" />
                   </div>
-                  <div className="rounded-full bg-gradient-to-tl from-[#3f3f3f] to-[#141414] items-center p-4 hover:bg-gradient-to-tl hover:from-white hover:to-white">
+                  <div className="rounded-full bg-gradient-to-tl from-[#3f3f3f] to-[#141414] items-center p-4">
                     <Image height={24} width={24} src={Separator.src} alt="Alvaro Teran Image" />
                   </div>
                 </div>

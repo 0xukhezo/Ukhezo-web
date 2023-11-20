@@ -50,9 +50,9 @@ export default function Home() {
         <div className=" col-span-2 lg:col-span-1">
           <SquareCard
             image={Logo.src}
-            h1={"Credentials"}
-            h2={"MORE ABOUT ME"}
-            href="credentials"
+            h1={"Last work"}
+            h2={"FUNGI"}
+            href="projects/fungi"
             classNameMain="rounded-3xl bg-gradient-to-l from-[#3f3f3f] to-[#141414] flex h-full justify-between"
           />
         </div>
@@ -61,8 +61,8 @@ export default function Home() {
         </div>
         <div className=" col-span-2 lg:col-span-1">
           <SquareCard
-            h1={"Projects"}
-            h2={"SHOWCASE"}
+            h1={"Profiles"}
+            h2={"STAY WITH ME"}
             href="contact"
             classNameMain="rounded-3xl bg-gradient-to-r from-[#3f3f3f] to-[#141414] flex h-full"
           />{" "}
