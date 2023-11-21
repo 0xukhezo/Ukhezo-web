@@ -46,12 +46,14 @@ export default function About() {
           <CVCard
             info={cvInfoExperience}
             className="rounded-3xl bg-gradient-to-tr from-[#3f3f3f] to-[#141414]  h-full py-6 px-10"
+            title="EXPERIENCE"
           />
         </div>
         <div className="row-span-4 col-span-2">
           <CVCard
             info={cvInfoEducation}
             className="rounded-3xl bg-gradient-to-tl from-[#3f3f3f] to-[#141414]  h-full py-6 px-10"
+            title="EDUCATION"
           />
         </div>
       </div>{" "}

@@ -24,7 +24,7 @@ export default function Navbar({ page }: NavbarProps) {
     <>
       <Disclosure as="nav" id="navbar" className="primary-navigation">
         <>
-          <div className="mx-auto pt-7 bg-mainBackground hidden sm:block">
+          <div className="mx-auto pt-7 hidden sm:block">
             <div className="flex items-center justify-evenly">
               <div className="flex-shrink-0">
                 <Link href="/">

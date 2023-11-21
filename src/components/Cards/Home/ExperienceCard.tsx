@@ -18,7 +18,7 @@ export default function ExperienceCard() {
           CLIENTS<br></br> WORLDWIRE
         </>
       ),
-      value: 10,
+      value: 3,
       prefix: "+ ",
     },
     {
@@ -27,7 +27,7 @@ export default function ExperienceCard() {
           TOTAL<br></br> PROJECTS
         </>
       ),
-      value: 7,
+      value: 6,
       prefix: "+ ",
     },
   ]

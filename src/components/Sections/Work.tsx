@@ -73,13 +73,13 @@ export default function Work() {
             title={"Hackers and Painters"}
           />
         </div>
-        <div className="col-span-2 row-start-4 row-end-6 -mt-16 mb-16">
+        <div className="col-span-2 row-start-4 row-end-6 -mt-16 mb-16 rounded-3xl bg-gradient-to-tr from-[#3f3f3f] to-[#141414]">
           <ProjectCard
             href={"test"}
             image={Logo.src}
             long={false}
             description={"Pepe"}
-            title={"Test"}
+            title={"Dragon Stake"}
           />
         </div>
       </div>

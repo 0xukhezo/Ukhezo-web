@@ -68,8 +68,8 @@ export default function Credentials() {
       </div>
       <div className="col-span-6 ml-[120px]" id="cards">
         <div className="mb-[80px]">
-          <h2 className="mb-[40px]">ABOUT ME</h2>
-          <p className="mb-[80px] rounded-3xl bg-gradient-to-b from-[#3f3f3f] to-[#141414] p-8">
+          <h2 className="mb-[40px] text-4xl text-white">ABOUT ME</h2>
+          <p className="mb-[80px]">
             Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.
             Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500,
             cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una
@@ -82,63 +82,43 @@ export default function Credentials() {
           </p>
         </div>
         <div className="mb-[80px]">
-          <h2 className="mb-[40px]">EXPERIENCE</h2>
+          <h2 className="mb-[40px] text-4xl text-white">EXPERIENCE</h2>
           {cvInfoExperience.map((info: cvType) => {
             return (
-              <div
-                className="mb-[60px] rounded-3xl bg-gradient-to-b from-[#3f3f3f] to-[#141414] p-8"
-                key={info.title}
-              >
-                <h3>{info.date}</h3>
-                <h2 className="my-[12px] text-yellow-500 font-semibold">{info.title}</h2>
-                <h3 className="mb-[6px]">{info.location}</h3>
+              <div className="mb-[60px] " key={info.title}>
+                <h3 className="text-sm">{info.date}</h3>
+                <h2 className="my-[12px] text-yellow-500 font-semibold text-2xl">{info.title}</h2>
+                <h3 className="mb-[6px] text-xl">{info.location}</h3>
                 <p>{info.description}</p>
               </div>
             )
-          })}
+          })}{" "}
         </div>
         <div className="mb-[80px]">
-          <h2 className="mb-[40px]">EDUCATION</h2>
+          <h2 className="mb-[40px] text-4xl text-white">EDUCATION</h2>{" "}
           {cvInfoEducation.map((info: cvType) => {
             return (
-              <div
-                className="mb-[60px] rounded-3xl bg-gradient-to-b from-[#3f3f3f] to-[#141414] p-8"
-                key={info.title}
-              >
-                <h3>{info.date}</h3>
-                <h2 className="my-[12px] text-yellow-500 font-semibold">{info.title}</h2>
-                <h3 className="mb-[6px]">{info.location}</h3>
+              <div className="mb-[60px] " key={info.title}>
+                {" "}
+                <h3 className="text-sm">{info.date}</h3>
+                <h2 className="my-[12px] text-yellow-500 font-semibold text-2xl">{info.title}</h2>
+                <h3 className="mb-[6px] text-xl">{info.location}</h3>
                 <p>{info.description}</p>
               </div>
             )
-          })}
+          })}{" "}
         </div>{" "}
         <div className="mb-[80px]">
-          <h2 className="mb-[40px]">SKILLS</h2>
-          <div className="grid grid-cols-2">
-            {skills.map((skill: string) => {
-              return (
-                <div
-                  className="mb-[60px] rounded-3xl bg-gradient-to-b from-[#3f3f3f] to-[#141414] p-8 mr-10"
-                  key={skill}
-                >
-                  <h3>{skill}</h3>
-                  <p>Language for the client side</p>
-                </div>
-              )
-            })}
-          </div>
-        </div>{" "}
-        <div className="mb-[80px]">
-          <h2 className="mb-[40px]">AWARDS</h2>
+          <h2 className="mb-[40px] text-4xl text-white">AWARDS</h2>{" "}
           {awards.map((award: any) => {
             return (
-              <div
-                className="mb-[60px] rounded-3xl bg-gradient-to-b from-[#3f3f3f] to-[#141414] p-8"
-                key={award.title}
-              >
-                <h3>{award.date}</h3>
-                <h2 className="my-[12px]">{award.title}</h2> <h2>PROTOCOLS</h2>
+              <div className="mb-[60px] " key={award.title}>
+                {" "}
+                <h3 className="text-sm">{award.date}</h3>
+                <h2 className="my-[12px] text-yellow-500 font-semibold text-2xl">
+                  {award.title}
+                </h2>{" "}
+                <h2 className="text-sm">Prizes Obtained</h2>
                 <div className="flex mt-[12px] items-center gap-x-6">
                   <div className="rounded-full bg-gradient-to-tl from-[#3f3f3f] to-[#141414] items-center p-4">
                     <Image height={24} width={24} src={Separator.src} alt="Alvaro Teran Image" />
@@ -155,7 +135,20 @@ export default function Credentials() {
                 </div>
               </div>
             )
-          })}
+          })}{" "}
+        </div>{" "}
+        <div className="mb-[80px]">
+          <h2 className="mb-[40px] text-4xl text-white">SKILLS</h2>
+          <div className="grid grid-cols-2">
+            {skills.map((skill: string, index: number) => {
+              return (
+                <div className={index !== 2 ? "pb-[60px] " : " pm-[20px]"} key={skill}>
+                  <h3>{skill}</h3>
+                  <p>Language for the client side</p>
+                </div>
+              )
+            })}{" "}
+          </div>
         </div>{" "}
       </div>
     </main>

@@ -4,12 +4,19 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Satoshi';
+  src: url('../../public/font/Satoshi-Variable.ttf');
+  font-weight: 500;
+}
+
+
 @keyframes slide {
   from {
     transform: translateX(0);
   }
   to {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
 }
 
@@ -25,6 +32,7 @@ html{
   margin: auto;
   background-color: #0f0f0f;
   color: white;
+  font-family: Satoshi;
 }
 
 .navLink {
@@ -60,11 +68,61 @@ html{
   margin-right: 34px; 
 }
 
-@keyframes slide {
-  0% {
-    transform: translateX(0);
+
+.card-about-hovered div > div > h2{
+  animation:show 1.2s linear;
+  /* overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid transparent;
+  animation: typing 1.2s steps(26, end), blink-caret 0.75s step-end infinite, cursor-fade-out 1s 1.3s forwards;  
+  max-width: fit-content; */
+}
+
+.card-about-hovered div > div > h1{
+  animation:show 1.2s linear;
+  /* overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid transparent;
+  opacity:1;
+  animation: typing 1.2s steps(26, end), blink-caret 0.75s step-end infinite, cursor-fade-out 1s 5s forwards, show 1.3s linear;
+  max-width: fit-content;
+  animation-delay: 1.3s; */
+}
+
+.card-about-hovered div > div > p{
+  animation:show 1.2s linear;
+}
+
+
+/* @keyframes typing {
+  from {
+    width: 0;
   }
-  100% {
-    transform: translateX(-50%);
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white; 
+  }
+}
+
+@keyframes cursor-fade-out {
+  to {
+    border-color: transparent;
+  }
+} */
+
+@keyframes show {
+  from {
+    opacity: 0
+  }
+  to {
+    opacity: 1
   }
 }
