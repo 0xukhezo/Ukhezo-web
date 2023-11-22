@@ -8,7 +8,7 @@ export default function AboutCard() {
   const [isHovered, setIsHovered] = useState(false)
 
   return (
-    <Link href="/about" className="card-about ">
+    <Link href="/about" className="card-about">
       <div
         className="rounded-3xl bg-gradient-to-tl from-[#3f3f3f] to-[#141414] flex justify-center w-full"
         onMouseEnter={() => setIsHovered(true)}

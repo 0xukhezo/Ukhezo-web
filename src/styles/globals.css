@@ -196,3 +196,9 @@ html{
     display: none;
   }
 }
+
+.card-work-together:hover div > div > div > div > h1 >span{
+  background: linear-gradient(to right, #3b82f6, #3a32d1); 
+  background-clip: text;
+  color: transparent;
+}

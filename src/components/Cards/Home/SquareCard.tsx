@@ -32,7 +32,7 @@ export default function SquareCard({ image, h2, h1, href, classNameMain }: Squar
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
         >
-          <div className="flex flex-col gap-y-[12px] items-center w-full px-8 py-4 h-full justify-between">
+          <div className="flex flex-col gap-y-[12px] items-center w-full px-8 py-5 h-full justify-between">
             {haveImage ? (
               <Image
                 height={82}
@@ -76,8 +76,8 @@ export default function SquareCard({ image, h2, h1, href, classNameMain }: Squar
               </div>
             )}
             <div className="relative flex w-full justify-start items-center mt-4">
-              <div>
-                <h2 className="mb-1.5 font-semibold">{h2}</h2>
+              <div className="mb-0.5">
+                <h2 className="mb-1.5 text-gray-400 text-xs ">{h2}</h2>
                 <h1 className="mb-3 font-semibold text-xl">{h1}</h1>{" "}
               </div>
 

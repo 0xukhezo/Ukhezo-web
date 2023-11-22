@@ -48,7 +48,7 @@ export default function ServicesCard() {
 
           <div className="relative flex w-full justify-start items-center ">
             <div>
-              <h2 className="mb-1.5 font-semibold">SPECIALIZATION</h2>
+              <h2 className="mb-1.5 text-xs text-gray-400">SPECIALIZATION</h2>
               <h1 className="mb-3 font-semibold text-xl">Services Offering</h1>{" "}
             </div>
 
