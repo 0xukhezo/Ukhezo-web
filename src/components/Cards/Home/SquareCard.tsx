@@ -89,7 +89,7 @@ export default function SquareCard({ image, h2, h1, href, classNameMain }: Squar
                 alt="Alvaro Teran Image"
                 className={`absolute right-0 ${
                   isHovered ? "opacity-100" : "opacity-40"
-                } transition-opacity duration-300`}
+                } transition-opacity duration-300 hidden xs:block`}
               />
             </div>
           </div>

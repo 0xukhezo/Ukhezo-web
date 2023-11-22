@@ -7,7 +7,7 @@ import Logo from "../../../public/Logo.png"
 
 export default function Work() {
   return (
-    <main className="">
+    <main className="px-10 xl:px-0">
       <div className="grid grid-cols-6 grid-rows-5 gap-x-[24px]">
         <div className="row-start-1 row-end-3 col-start-1 col-end-3">
           <ProjectCard

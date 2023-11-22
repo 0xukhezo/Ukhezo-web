@@ -6,7 +6,7 @@ import { EnvelopeIcon, PhoneIcon, HomeIcon } from "@heroicons/react/24/outline"
 
 export default function Contact() {
   return (
-    <main className="grid grid-cols-6 ">
+    <main className="grid grid-cols-6 px-10 xl:px-0">
       <div className="col-span-2">
         <h1 className="text-xl text-white">CONTACT INFO</h1>
         <div className="flex mt-[28px] items-center">

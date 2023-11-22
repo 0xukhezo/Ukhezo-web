@@ -9,7 +9,7 @@ import { cvType } from "@/types/Types"
 
 export default function Credentials() {
   return (
-    <main className="grid grid-cols-9">
+    <main className="grid grid-cols-9 px-10 xl:px-0">
       <div className="col-span-3 h-fit sticky top-[100px] ">
         <div className="rounded-3xl bg-gradient-to-b from-[#3f3f3f] to-[#141414] flex justify-center p-5 h-full flex-col text-center">
           <Image

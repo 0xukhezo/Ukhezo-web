@@ -12,6 +12,9 @@ const config: Config = {
         lightGray: "#323232",
         mainBackground: "#0f0f0f",
       },
+      screens: {
+        xs: "500px",
+      },
       borderWidth: { 1: "1px" },
     },
   },
