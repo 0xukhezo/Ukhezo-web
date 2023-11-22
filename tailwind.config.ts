@@ -13,10 +13,6 @@ const config: Config = {
         mainBackground: "#0f0f0f",
       },
       borderWidth: { 1: "1px" },
-      fontFamily: {
-        anton: ["Anton", "normal"],
-        bitter: ["Bitter", "normal"],
-      },
     },
   },
   plugins: [],
