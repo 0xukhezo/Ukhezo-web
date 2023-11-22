@@ -62,10 +62,20 @@ html{
   margin-right: 34px; 
 }
 
+
+.loading{
+  animation: show 1s linear forwards;
+  animation-delay: 0.3s;
+  opacity: 0;
+  animation-fill-mode: forwards; 
+}
+
+
+
 .card-about article{
   position: relative;
   max-width: 230px;
-  transition: all .4 ease;
+  transition: all .8 ease;
 }
 
 .card-about article img:first-child{
@@ -73,6 +83,7 @@ html{
   border-radius: 4px;
   object-fit: cover;
   width: 100%;
+  
 }
 
 .card-about article img:last-child{
@@ -84,11 +95,12 @@ html{
   margin: auto;
   transform: translateY(25%);
   opacity: 0;
-  transition: .4s ease;
+  transition: .8s ease;
 }
 
 .card-about:hover article{
  transform: perspective(250px) rotateX(10deg) translateY(-5%) translateZ(0);
+ transition: .8s ease;
 }
 
 .card-about:hover article::before{
@@ -99,7 +111,7 @@ html{
   width: 100%;
   background-image: linear-gradient(to bottom, transparent 10%, rgba(0,0,0,0.5) 50%,rgba(0,0,0) 95%);
   opacity:0;
-  transition: .4s ease;
+  transition: .8s ease;
 }
 
 .card-about:hover article::before{
@@ -183,12 +195,7 @@ html{
   z-index: 1000;
 }
 
-.loading{
-  animation: show 1s linear forwards;
-  animation-delay: 0.3s;
-  opacity: 0;
-  animation-fill-mode: forwards; 
-}
+
 
 @keyframes lineAnimation {
   to {

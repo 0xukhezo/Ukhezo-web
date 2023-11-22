@@ -8,14 +8,8 @@ import WorkTogetherCard from "../Cards/Home/WorkTogetherCard"
 import ExperienceCard from "../Cards/Home/ExperienceCard"
 
 export default function Home() {
-  const [showElement, setShowElement] = useState(false)
-
-  useEffect(() => {
-    setShowElement(true)
-  }, [])
-
   return (
-    <main className="grid gap-y-[16px] px-10 lg:px-0 w-screen lg:w-fit overflow-auto list-view">
+    <main className="grid gap-y-[16px] px-10 lg:px-0 w-screen lg:w-fit overflow-auto ">
       <div className="grid grid-cols-4 grid-rows-4 gap-[16px] ">
         <div className={`animated-element lg:col-span-2 col-span-4 row-span-4 `}>
           <AboutCard />
