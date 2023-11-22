@@ -17,11 +17,7 @@ export default function Home() {
   return (
     <main className="grid gap-y-[16px] px-10 lg:px-0 w-screen lg:w-fit overflow-auto list-view">
       <div className="grid grid-cols-4 grid-rows-4 gap-[16px] ">
-        <div
-          className={`animated-element lg:col-span-2 col-span-4 row-span-4  ${
-            showElement ? "show" : ""
-          }`}
-        >
+        <div className={`animated-element lg:col-span-2 col-span-4 row-span-4 `}>
           <AboutCard />
         </div>
         <div className="lg:col-span-2 col-span-4">

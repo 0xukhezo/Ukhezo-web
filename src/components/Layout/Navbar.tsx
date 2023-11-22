@@ -22,6 +22,7 @@ export default function Navbar({ page }: NavbarProps) {
 
   return (
     <>
+      <div className="line-animation"></div>
       <Disclosure as="nav" id="navbar" className="primary-navigation">
         <>
           <div className="mx-auto pt-7 hidden sm:block">
@@ -83,7 +84,7 @@ export default function Navbar({ page }: NavbarProps) {
           </div>
         </>
       </Disclosure>
-      <main className="mt-[80px] mb-[40px] max-w-[1170px] mx-auto">{page}</main>
+      <main className="mt-[80px] mb-[40px] max-w-[1170px] mx-auto loading">{page}</main>
       <Footer />
     </>
   )
