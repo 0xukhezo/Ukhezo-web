@@ -143,7 +143,7 @@ export default function Credentials() {
             {skills.map((skill: string, index: number) => {
               return (
                 <div className={index !== 2 ? "pb-[60px] " : " pm-[20px]"} key={skill}>
-                  <h3>{skill}</h3>
+                  <h3 className="text-blue-500 font-bold text-2xl mb-1">{skill}</h3>
                   <p>Language for the client side</p>
                 </div>
               )

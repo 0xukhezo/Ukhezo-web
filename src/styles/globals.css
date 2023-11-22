@@ -69,7 +69,7 @@ html{
 }
 
 .card-about article img:first-child{
-  box-shadow: 0 60px 60px -60px rgba(0,30,255,0.5);
+  box-shadow: 0 60px 60px -70px #3b82f6;
   border-radius: 4px;
   object-fit: cover;
   width: 100%;
