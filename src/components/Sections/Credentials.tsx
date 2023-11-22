@@ -87,7 +87,7 @@ export default function Credentials() {
             return (
               <div className="mb-[60px] " key={info.title}>
                 <h3 className="text-sm">{info.date}</h3>
-                <h2 className="my-[12px] text-yellow-500 font-semibold text-2xl">{info.title}</h2>
+                <h2 className="my-[12px] text-blue-500 font-semibold text-2xl">{info.title}</h2>
                 <h3 className="mb-[6px] text-xl">{info.location}</h3>
                 <p>{info.description}</p>
               </div>
@@ -101,7 +101,7 @@ export default function Credentials() {
               <div className="mb-[60px] " key={info.title}>
                 {" "}
                 <h3 className="text-sm">{info.date}</h3>
-                <h2 className="my-[12px] text-yellow-500 font-semibold text-2xl">{info.title}</h2>
+                <h2 className="my-[12px] text-blue-500 font-semibold text-2xl">{info.title}</h2>
                 <h3 className="mb-[6px] text-xl">{info.location}</h3>
                 <p>{info.description}</p>
               </div>
@@ -115,7 +115,7 @@ export default function Credentials() {
               <div className="mb-[60px] " key={award.title}>
                 {" "}
                 <h3 className="text-sm">{award.date}</h3>
-                <h2 className="my-[12px] text-yellow-500 font-semibold text-2xl">
+                <h2 className="my-[12px] text-blue-500 font-semibold text-2xl">
                   {award.title}
                 </h2>{" "}
                 <h2 className="text-sm">Prizes Obtained</h2>

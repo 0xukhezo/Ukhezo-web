@@ -21,7 +21,7 @@ export default function HomeWorkTogetherCard() {
           <div className="relative flex w-full justify-start items-center ">
             <div>
               <h1 className="mb-3 font-semibold text-5xl">
-                Let's<br></br> work <span className="text-yellow-500">together</span>
+                Let's<br></br> work <span className="text-blue-500">together</span>
               </h1>{" "}
             </div>
 

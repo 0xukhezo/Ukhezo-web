@@ -35,7 +35,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="pb-[100px] pt-[42px] text-white text-center">
-          © All rights reserved by <span className="text-yellow-300">Alvaro Teran</span>
+          © All rights reserved by <span className="text-blue-500">Alvaro Teran</span>
         </div>
       </div>
     </div>

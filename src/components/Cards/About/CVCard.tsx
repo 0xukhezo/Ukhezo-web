@@ -17,7 +17,7 @@ export default function CVCard({ info, className, title }: CVCardProps) {
         return (
           <div className="mt-4" key={infoData.title}>
             <h3 className="text-sm">{infoData.date}</h3>
-            <h2 className="my-1 text-xl text-yellow-500">{infoData.title}</h2>
+            <h2 className="my-1 text-xl text-blue-500">{infoData.title}</h2>
             <p className="text-sm">{infoData.location}</p>
           </div>
         )

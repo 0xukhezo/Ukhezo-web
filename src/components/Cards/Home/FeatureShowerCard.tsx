@@ -15,7 +15,7 @@ export default function FeatureShowerCard() {
             className="mx-2"
             loading="eager"
           />{" "}
-          LATEST WORK AND <span className="text-yellow-500 ml-1"> FEATURED</span>
+          LATEST WORK AND <span className="text-blue-500 ml-1"> FEATURED</span>
           <Image
             src={SeparatorImage}
             alt="Separator"
@@ -24,7 +24,7 @@ export default function FeatureShowerCard() {
             className="mx-2"
             loading="eager"
           />{" "}
-          LATEST WORK AND <span className="text-yellow-500 ml-1"> FEATURED</span>
+          LATEST WORK AND <span className="text-blue-500 ml-1"> FEATURED</span>
           <Image
             src={SeparatorImage}
             alt="Separator"
@@ -33,7 +33,7 @@ export default function FeatureShowerCard() {
             className="mx-2"
             loading="eager"
           />{" "}
-          LATEST WORK AND <span className="text-yellow-500 ml-1"> FEATURED</span>
+          LATEST WORK AND <span className="text-blue-500 ml-1"> FEATURED</span>
         </div>
         <div className="shower-text flex items-center">
           <Image
@@ -44,7 +44,7 @@ export default function FeatureShowerCard() {
             className="mx-2"
             loading="eager"
           />{" "}
-          LATEST WORK AND <span className="text-yellow-500 ml-1"> FEATURED</span>
+          LATEST WORK AND <span className="text-blue-500 ml-1"> FEATURED</span>
           <Image
             src={SeparatorImage}
             alt="Separator"
@@ -53,7 +53,7 @@ export default function FeatureShowerCard() {
             className="mx-2"
             loading="eager"
           />{" "}
-          LATEST WORK AND <span className="text-yellow-500 ml-1"> FEATURED</span>
+          LATEST WORK AND <span className="text-blue-500 ml-1"> FEATURED</span>
           <Image
             src={SeparatorImage}
             alt="Separator"
@@ -62,7 +62,7 @@ export default function FeatureShowerCard() {
             className="mx-2"
             loading="eager"
           />{" "}
-          LATEST WORK AND <span className="text-yellow-500 ml-1"> FEATURED</span>
+          LATEST WORK AND <span className="text-blue-500 ml-1"> FEATURED</span>
         </div>
         <div className="shower-text flex items-center lg:hidden">
           <Image
@@ -73,7 +73,7 @@ export default function FeatureShowerCard() {
             className="mx-2"
             loading="eager"
           />{" "}
-          LATEST WORK AND <span className="text-yellow-500 ml-1"> FEATURED</span>
+          LATEST WORK AND <span className="text-blue-500 ml-1"> FEATURED</span>
           <Image
             src={SeparatorImage}
             alt="Separator"
@@ -82,7 +82,7 @@ export default function FeatureShowerCard() {
             className="mx-2"
             loading="eager"
           />{" "}
-          LATEST WORK AND <span className="text-yellow-500 ml-1"> FEATURED</span>
+          LATEST WORK AND <span className="text-blue-500 ml-1"> FEATURED</span>
           <Image
             src={SeparatorImage}
             alt="Separator"
@@ -91,7 +91,7 @@ export default function FeatureShowerCard() {
             className="mx-2"
             loading="eager"
           />{" "}
-          LATEST WORK AND <span className="text-yellow-500 ml-1"> FEATURED</span>
+          LATEST WORK AND <span className="text-blue-500 ml-1"> FEATURED</span>
         </div>
       </div>
     </div>
