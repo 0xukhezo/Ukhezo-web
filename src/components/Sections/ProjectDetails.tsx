@@ -1,17 +1,8 @@
-import React, { useEffect } from "react"
-import ImageCard from "../Cards/About/ImageCard"
-import SelfInfoCard from "../Cards/About/SelfInfoCard"
+import React from "react"
 import Image from "next/image"
 import SeparatorImage from "../../../public/Separator.png"
-import CVCard from "../Cards/About/CVCard"
-import { cvInfoEducation, cvInfoExperience } from "../../../constants/Constants"
-import SquareCard from "../Cards/Home/SquareCard"
-import ServicesCard from "../Cards/Home/ServicesCard"
 import Logo from "../../../public/Logo.png"
-import WorkTogetherCard from "../Cards/Home/WorkTogetherCard"
 import Icon from "../../../public/Icon3.png"
-import gsap from "gsap"
-import LocomotiveScroll from "locomotive-scroll"
 import Link from "next/link"
 
 type ProjectDetailsProps = {
@@ -21,14 +12,15 @@ type ProjectDetailsProps = {
 export default function ProjectDetails({ project }: ProjectDetailsProps) {
   return (
     <main className="px-10 xl:px-0">
-      <h2 className="mb-[24px] tracking-widest hidden md:block">{project.toUpperCase()}</h2>
+      {/* <h2 className="mb-[24px] tracking-widest hidden md:block">{project.toUpperCase()}</h2> */}
+      <h2 className="mb-[24px] tracking-widest hidden md:block">PEPE</h2>
       <div className="pb-[484px] xs:pb-[544px] sm:pb-[560px] lg:pb-[574px]">
         <div className="flex w-full justify-star mb-[30px] items-center justify-center md:justify-start">
           <Image
             src={SeparatorImage}
             alt="Separator"
-            width={64}
-            height={64}
+            width={48}
+            height={48}
             className="mr-2"
             loading="eager"
           />
@@ -38,8 +30,8 @@ export default function ProjectDetails({ project }: ProjectDetailsProps) {
           <Image
             src={SeparatorImage}
             alt="Separator"
-            width={64}
-            height={64}
+            width={48}
+            height={48}
             className="ml-2"
             loading="eager"
           />
