@@ -47,7 +47,7 @@ export default function Contact() {
 
         <div className="mb-[64px] md:mt-[64px] col-span-6 ">
           <h1 className="text-xl text-white xs:text-center md:text-start">SOCIAL INFO</h1>
-          <div className="flex mt-[28px] items-center justify-evenly">
+          <div className="flex mt-[28px] items-center justify-evenly md:justify-start">
             <a
               href="https://github.com/0xukhezo"
               target="_blank"

@@ -10,63 +10,72 @@ import { cvType } from "@/types/Types"
 export default function Credentials() {
   return (
     <main className="grid grid-cols-9 px-10 xl:px-0">
-      <div className="col-span-3 h-fit sticky top-[100px] ">
-        <div className="rounded-3xl bg-gradient-to-b from-[#3f3f3f] to-[#141414] flex justify-center p-5 h-full flex-col text-center">
+      <div className="col-span-9 md:col-span-3 h-fit md:sticky top-[100px] mb-20 md:mb-0">
+        <div className="rounded-3xl bg-gradient-to-b from-[#3f3f3f] to-[#141414] flex md:justify-center p-5 h-full md:flex-col sm:flex-row flex-col text-center w-full justify-around">
           <Image
             height={382}
             width={382}
             src={Logo.src}
             alt="Alvaro Teran Image"
-            className="rounded-3xl"
+            className="rounded-3xl block sm:hidden md:block mx-auto"
           />{" "}
-          <h1 className="mt-8 mb-2">Alvaro Teran</h1>
-          <p>@ukhezo</p>{" "}
-          <div className="flex mt-[28px] items-center gap-x-6 mx-4">
-            <a
-              href="https://github.com/0xukhezo"
-              target="_blank"
-              className="text-black rounded-full "
-            >
-              <div className="rounded-full bg-gradient-to-tl from-[#3f3f3f] to-[#141414] items-center p-4 hover:bg-gradient-to-tl hover:from-white hover:to-white ">
-                <Image height={64} width={64} src={Separator.src} alt="Alvaro Teran Image" />
-              </div>{" "}
-            </a>
-            <a
-              href="https://github.com/0xukhezo"
-              target="_blank"
-              className="text-black rounded-full"
-            >
-              <div className="rounded-full bg-gradient-to-tl from-[#3f3f3f] to-[#141414] items-center p-4 hover:bg-gradient-to-tl hover:from-white hover:to-white">
-                <Image height={64} width={64} src={Separator.src} alt="Alvaro Teran Image" />
-              </div>{" "}
-            </a>
-            <a
-              href="https://github.com/0xukhezo"
-              target="_blank"
-              className="text-black rounded-full"
-            >
-              <div className="rounded-full bg-gradient-to-tl from-[#3f3f3f] to-[#141414] items-center p-4 hover:bg-gradient-to-tl hover:from-white hover:to-white">
-                <Image height={64} width={64} src={Separator.src} alt="Alvaro Teran Image" />
-              </div>{" "}
-            </a>{" "}
-            <a
-              href="https://github.com/0xukhezo"
-              target="_blank"
-              className="text-black rounded-full"
-            >
-              <div className="rounded-full bg-gradient-to-tl from-[#3f3f3f] to-[#141414] items-center p-4 hover:bg-gradient-to-tl hover:from-white hover:to-white">
-                <Image height={64} width={64} src={Separator.src} alt="Alvaro Teran Image" />
-              </div>{" "}
-            </a>
+          <Image
+            height={280}
+            width={280}
+            src={Logo.src}
+            alt="Alvaro Teran Image"
+            className="rounded-3xl md:hidden sm:block hidden"
+          />
+          <div className="sm:ml-4 md:ml-0 sm:text-start text-center md:text-center">
+            <h1 className="mt-8 mb-2 text-4xl ">Alvaro Teran</h1>
+            <p className="text-2xl">@ukhezo</p>{" "}
+            <div className="flex mt-[28px] items-center gap-x-6 justify-between">
+              <a
+                href="https://github.com/0xukhezo"
+                target="_blank"
+                className="text-black rounded-full "
+              >
+                <div className="rounded-full bg-gradient-to-tl from-[#3f3f3f] to-[#141414] items-center p-2 lg:p-4 hover:bg-gradient-to-tl hover:from-white hover:to-white max-w-[64px] min-w-[32px]">
+                  <Image height={64} width={64} src={Separator.src} alt="Alvaro Teran Image" />
+                </div>{" "}
+              </a>
+              <a
+                href="https://github.com/0xukhezo"
+                target="_blank"
+                className="text-black rounded-full"
+              >
+                <div className="rounded-full bg-gradient-to-tl from-[#3f3f3f] to-[#141414] items-center p-2 lg:p-4 hover:bg-gradient-to-tl hover:from-white hover:to-white max-w-[64px] min-w-[32px]">
+                  <Image height={64} width={64} src={Separator.src} alt="Alvaro Teran Image" />
+                </div>{" "}
+              </a>
+              <a
+                href="https://github.com/0xukhezo"
+                target="_blank"
+                className="text-black rounded-full"
+              >
+                <div className="rounded-full bg-gradient-to-tl from-[#3f3f3f] to-[#141414] items-center p-2 lg:p-4 hover:bg-gradient-to-tl hover:from-white hover:to-white max-w-[64px] min-w-[32px]">
+                  <Image height={64} width={64} src={Separator.src} alt="Alvaro Teran Image" />
+                </div>{" "}
+              </a>{" "}
+              <a
+                href="https://github.com/0xukhezo"
+                target="_blank"
+                className="text-black rounded-full"
+              >
+                <div className="rounded-full bg-gradient-to-tl from-[#3f3f3f] to-[#141414] items-center p-2 lg:p-4 hover:bg-gradient-to-tl hover:from-white hover:to-white max-w-[64px] min-w-[32px]">
+                  <Image height={64} width={64} src={Separator.src} alt="Alvaro Teran Image" />
+                </div>{" "}
+              </a>
+            </div>
+            <Link href="contact">
+              <button className="block w-full bg-lightGray font-semibold rounded-2xl py-3 mt-7">
+                Contact Me
+              </button>
+            </Link>
           </div>
-          <Link href="contact">
-            <button className="block w-full bg-lightGray font-semibold rounded-2xl py-3 mt-7">
-              Contact Me
-            </button>
-          </Link>
         </div>
       </div>
-      <div className="col-span-6 ml-[120px]" id="cards">
+      <div className="col-span-9 md:col-span-6 md:ml-[120px] text-justify" id="cards">
         <div className="mb-[80px]">
           <h2 className="mb-[40px] text-4xl text-white">ABOUT ME</h2>
           <p className="mb-[80px]">

@@ -22,14 +22,14 @@ export default function Navbar({ page }: NavbarProps) {
   const [openNavBar, setOpenNavBar] = useState<boolean>(false)
 
   const router = useRouter()
-  console.log(router)
+
   return (
     <>
       <div className="line-animation"></div>
       <Disclosure as="nav">
         {({ open }) => (
           <>
-            <div className="mx-auto md:pt-6 lg:px-18 px-6 max-w-[1700px]">
+            <div className=" mx-auto md:pt-6 lg:px-18 px-6 max-w-[1700px]">
               <div className="flex items-center md:justify-evenly justify-between">
                 <div className="flex-shrink-0">
                   <Link href="/" className="flex items-center">

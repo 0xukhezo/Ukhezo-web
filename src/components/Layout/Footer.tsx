@@ -14,7 +14,7 @@ export default function Footer() {
   const router = useRouter()
 
   return (
-    <div className="text-white pt-[57px] xl:pt-[114px] px-[20px] sm:px-[30px] md:px-[50px] lg:px-[100px] xl:px-[152px]">
+    <div className="text-white sm:pt-[57px] xl:pt-[114px] px-[20px] sm:px-[30px] md:px-[50px] lg:px-[100px] xl:px-[152px]">
       <div className="centered">
         <Image
           src={Logo.src}

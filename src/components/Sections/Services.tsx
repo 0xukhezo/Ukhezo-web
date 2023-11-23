@@ -67,9 +67,10 @@ export default function Services() {
       <div className="grid grid-cols-6 lg:grid-cols-4 gap-[16px] min-h-[240px]">
         <div className="col-span-3 md:col-span-2  lg:col-span-1">
           <SquareCard
+            image={Logo.src}
             h1={"Projects"}
             h2={"SHOWCASE"}
-            href="contact"
+            href="works"
             classNameMain="rounded-3xl bg-gradient-to-tr from-[#3f3f3f] to-[#141414] flex h-full"
           />{" "}
         </div>
