@@ -148,6 +148,12 @@ html{
   animation-fill-mode: forwards; 
 }
 
+#details-img{
+  width: 100%;  
+  position: absolute;
+  left: 0;
+}
+
 @keyframes typing {
   from {
     width: 0;
@@ -208,3 +214,5 @@ html{
   background-clip: text;
   color: transparent;
 }
+
+

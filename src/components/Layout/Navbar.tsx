@@ -98,7 +98,6 @@ export default function Navbar({ page }: NavbarProps) {
             <Disclosure.Panel className="md:hidden h-screen flex flex-col justify-between">
               <div className="space-y-1 pb-3 pt-2">
                 {navigation.map((link: NavigationType, index: number) => {
-                  console.log(router.asPath, link.href)
                   return (
                     <Link href={link.href} key={index}>
                       <Disclosure.Button
