@@ -46,7 +46,7 @@ export default function AboutCard() {
           src={Star.src}
           id="star"
           alt="Alvaro Teran Image"
-          className={`absolute right-0 bottom-0 md:bottom-1${
+          className={`absolute right-0 bottom-12 md:bottom-1 ${
             isHovered ? "opacity-100" : "opacity-40 "
           } transition-opacity duration-300`}
         />

@@ -26,7 +26,7 @@ export default function HomeWorkTogetherCard() {
             src={Star.src}
             id="star"
             alt="Alvaro Teran Image"
-            className={`absolute right-0 ${
+            className={`absolute right-0 bottom-4 md:bottom-12 lg:bottom-4 ${
               isHovered ? "opacity-100" : "opacity-40"
             } transition-opacity duration-300`}
           />
