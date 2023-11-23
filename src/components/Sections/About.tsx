@@ -9,6 +9,7 @@ import SquareCard from "../Cards/Home/SquareCard"
 import ServicesCard from "../Cards/Home/ServicesCard"
 import Logo from "../../../public/Logo.png"
 import WorkTogetherCard from "../Cards/Home/WorkTogetherCard"
+import Link from "next/link"
 
 export default function About() {
   return (
@@ -82,24 +83,27 @@ export default function About() {
       </div>{" "}
       <div className="grid grid-cols-6 lg:grid-cols-4 gap-[16px] min-h-[240px]">
         <div className="col-span-3 md:col-span-2  lg:col-span-1">
-          <SquareCard
-            h1={"Projects"}
-            h2={"SHOWCASE"}
-            href="contact"
-            classNameMain="rounded-3xl bg-gradient-to-tr from-[#3f3f3f] to-[#141414] flex h-full"
-          />{" "}
+          <Link href="/works">
+            <SquareCard
+              h1={"Projects"}
+              h2={"SHOWCASE"}
+              classNameMain="rounded-3xl bg-gradient-to-tr from-[#3f3f3f] to-[#141414] flex h-full"
+            />
+          </Link>
         </div>
         <div className="col-span-2 hidden md:block">
           <WorkTogetherCard />
         </div>
         <div className="col-span-3 md:col-span-2  lg:col-span-1">
-          <SquareCard
-            image={Logo.src}
-            h1={"Credentials"}
-            h2={"MORE ABOUT ME"}
-            href="credentials"
-            classNameMain="rounded-3xl bg-gradient-to-tl from-[#3f3f3f] to-[#141414] flex h-full justify-between"
-          />
+          {" "}
+          <Link href="/credentials">
+            <SquareCard
+              image={Logo.src}
+              h1={"Credentials"}
+              h2={"MORE ABOUT ME"}
+              classNameMain="rounded-3xl bg-gradient-to-tl from-[#3f3f3f] to-[#141414] flex h-full justify-between"
+            />{" "}
+          </Link>
         </div>
         <div className="col-span-6 md:hidden block">
           <WorkTogetherCard />

@@ -8,11 +8,10 @@ type SquarePropsCard = {
   image?: string
   h2: string
   h1: string
-  href: string
   classNameMain: string
 }
 
-export default function SquareCard({ image, h2, h1, href, classNameMain }: SquarePropsCard) {
+export default function SquareCard({ image, h2, h1, classNameMain }: SquarePropsCard) {
   const [isHovered, setIsHovered] = useState(false)
   const [haveImage, setHaveImage] = useState(false)
   const [loading, setLoading] = useState(false)
@@ -25,7 +24,7 @@ export default function SquareCard({ image, h2, h1, href, classNameMain }: Squar
   }, [])
 
   return (
-    <Link href={href} className="h-screen">
+    <>
       {loading && (
         <div
           className={classNameMain}
@@ -95,6 +94,6 @@ export default function SquareCard({ image, h2, h1, href, classNameMain }: Squar
           </div>
         </div>
       )}
-    </Link>
+    </>
   )
 }

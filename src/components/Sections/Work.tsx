@@ -8,7 +8,7 @@ import Logo from "../../../public/Logo.png"
 export default function Work() {
   return (
     <main className="px-10 xl:px-0">
-      <div className="grid grid-cols-4 sm:grid-cols-6 lg:grid-cols-6 lg:grid-rows-5 lg:gap-x-[12px] gap-y-[24px] sm:gap-[24px]">
+      <div className="grid grid-cols-4 sm:grid-cols-6 lg:grid-cols-6 lg:grid-rows-5 lg:gap-x-[24px] gap-y-[24px] sm:gap-[24px]">
         <div className="col-span-6 flex w-full justify-center items-center flex lg:hidden">
           <Image
             src={SeparatorImage}
