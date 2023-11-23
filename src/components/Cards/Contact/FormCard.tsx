@@ -13,7 +13,13 @@ export default function FormCard() {
             Let's work <span className="text-blue-500">together</span>
           </h1>{" "}
         </div>
-        <Image height={30} width={30} src={Icon.src} alt="Star" className="mr-14 max-h-[80px]" />
+        <Image
+          height={30}
+          width={30}
+          src={Icon.src}
+          alt="Star"
+          className="mr-14 max-h-[80px] hidden md:block"
+        />
       </div>
       <ContactForm />
     </div>
