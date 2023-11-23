@@ -61,11 +61,11 @@ export default function Home() {
           <ServicesCard />
         </div>
       </div>{" "}
-      <div className="grid grid-cols-4 lg:grid-rows-3 grid-rows-6 gap-[16px]">
-        <div className="lg:col-span-2 col-span-4 row-span-3 ">
+      <div className="grid grid-cols-4 gap-[16px]">
+        <div className="lg:col-span-2 col-span-4  ">
           <ExperienceCard />
         </div>
-        <div className="lg:col-span-2 col-span-4 row-span-3">
+        <div className="lg:col-span-2 col-span-4 ">
           <WorkTogetherCard />
         </div>
       </div>

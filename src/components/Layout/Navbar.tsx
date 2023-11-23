@@ -76,7 +76,7 @@ export default function Navbar({ page }: NavbarProps) {
                 </div>
 
                 <div className="-mr-2 flex md:hidden">
-                  <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:text-main outline-none pr-4 mt-10 md:mt-0">
+                  <Disclosure.Button className="inline-flex items-center justify-center rounded-md  text-gray-400 hover:text-main outline-none  mt-10 md:mt-0">
                     {open ? (
                       <XMarkIcon
                         className="block h-6 w-6"
@@ -137,7 +137,9 @@ export default function Navbar({ page }: NavbarProps) {
       </Disclosure>{" "}
       {!openNavBar && (
         <>
-          <main className="mt-[80px] mb-[40px] max-w-[1170px] mx-auto loading">{page}</main>{" "}
+          <main className="mt-[40px] lg:mt-[80px] mb-[40px] max-w-[1170px] mx-auto loading">
+            {page}
+          </main>{" "}
           <Footer />{" "}
         </>
       )}
