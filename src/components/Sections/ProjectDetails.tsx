@@ -36,9 +36,10 @@ export default function ProjectDetails({ project }: ProjectDetailsProps) {
             loading="eager"
           />
         </div>
-        <h2 className="mb-[24px] tracking-widest md:hidden flex justify-center">
+        {/* <h2 className="mb-[24px] tracking-widest md:hidden flex justify-center">
           {project.toUpperCase()}
-        </h2>
+        </h2> */}
+        <h2 className="mb-[24px] tracking-widest md:hidden flex justify-center">PEPE</h2>
         <img
           src={Logo.src}
           alt="Separator"
