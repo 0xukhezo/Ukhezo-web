@@ -7,9 +7,10 @@ import CVCard from "../Cards/About/CVCard"
 import { cvInfoEducation, cvInfoExperience } from "../../../constants/Constants"
 import SquareCard from "../Cards/Home/SquareCard"
 import ServicesCard from "../Cards/Home/ServicesCard"
-import Logo from "../../../public/Logo.png"
 import WorkTogetherCard from "../Cards/Home/WorkTogetherCard"
 import Link from "next/link"
+import Credentials from "../../../public/Credentials.svg"
+import Logo from "../../../public/Logo.svg"
 
 export default function About() {
   return (
@@ -85,23 +86,33 @@ export default function About() {
         <div className="col-span-3 md:col-span-2  lg:col-span-1">
           <Link href="/works">
             <SquareCard
+              image={Logo.src}
               h1={"Projects"}
               h2={"SHOWCASE"}
               classNameMain="rounded-3xl bg-gradient-to-tr from-[#3f3f3f] to-[#141414] flex h-full"
+              classNameContainer="flex flex-col items-center w-full px-4 h-full py-5 xl:pb-0 h-full justify-between max-h-[230px]"
+              imageHeight={282}
+              imageWidth={282}
             />
           </Link>
         </div>
         <div className="col-span-2 hidden md:block">
-          <WorkTogetherCard />
+          {" "}
+          <Link href="/contact">
+            <WorkTogetherCard />
+          </Link>
         </div>
         <div className="col-span-3 md:col-span-2  lg:col-span-1">
           {" "}
           <Link href="/credentials">
             <SquareCard
-              image={Logo.src}
+              image={Credentials.src}
               h1={"Credentials"}
               h2={"MORE ABOUT ME"}
-              classNameMain="rounded-3xl bg-gradient-to-tl from-[#3f3f3f] to-[#141414] flex h-full justify-between"
+              classNameMain="rounded-3xl bg-gradient-to-t from-[#3f3f3f] to-[#141414] flex h-full"
+              classNameContainer="flex flex-col items-center w-full px-4 h-full py-5 xl:pb-0 h-full justify-between max-h-[230px]"
+              imageHeight={282}
+              imageWidth={282}
             />{" "}
           </Link>
         </div>

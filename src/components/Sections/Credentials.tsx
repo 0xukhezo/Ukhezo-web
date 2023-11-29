@@ -1,8 +1,10 @@
 import React from "react"
 import Image from "next/image"
 
-import Logo from "../../../public/Logo.png"
-import Separator from "../../../public/Separator.png"
+import Alvaro from "../../../public/Alvaro.png"
+import Github from "../../../public/Github.svg"
+import Twitter from "../../../public/Twitter.svg"
+import Lens from "../../../public/Lens.svg"
 import Link from "next/link"
 import { awards, cvInfoEducation, cvInfoExperience, skills } from "../../../constants/Constants"
 import { cvType } from "@/types/Types"
@@ -15,49 +17,43 @@ export default function Credentials() {
           <Image
             height={382}
             width={382}
-            src={Logo.src}
+            src={Alvaro.src}
             alt="Alvaro Teran Image"
             className="rounded-3xl block sm:hidden md:block mx-auto"
           />{" "}
           <Image
             height={280}
             width={280}
-            src={Logo.src}
+            src={Alvaro.src}
             alt="Alvaro Teran Image"
             className="rounded-3xl md:hidden sm:block hidden"
           />
           <div className="sm:ml-4 md:ml-0 sm:text-start text-center md:text-center">
             <h1 className="mt-8 mb-2 text-4xl ">Alvaro Teran</h1>
-            <p className="text-2xl">@ukhezo</p>{" "}
-            <div className="flex mt-[28px] items-center gap-x-6 justify-between">
+            <p className="text-2xl">@0xUkhezo</p>{" "}
+            <div className="flex mt-[28px] items-center gap-x-6 justify-around">
               <a
                 href="https://github.com/0xukhezo"
                 target="_blank"
                 className="text-black rounded-full "
               >
-                <div className="rounded-full bg-gradient-to-tl from-[#3f3f3f] to-[#141414] items-center p-2 lg:p-4 hover:bg-gradient-to-tl hover:from-white hover:to-white max-w-[64px] min-w-[32px]">
-                  <Image height={64} width={64} src={Separator.src} alt="Alvaro Teran Image" />
-                </div>{" "}
+                <Image height={48} width={48} src={Github.src} alt="Alvaro Teran Image" />
               </a>
               <a
-                href="https://github.com/0xukhezo"
+                href="https://twitter.com/0xUkhezo"
                 target="_blank"
                 className="text-black rounded-full"
               >
-                <div className="rounded-full bg-gradient-to-tl from-[#3f3f3f] to-[#141414] items-center p-2 lg:p-4 hover:bg-gradient-to-tl hover:from-white hover:to-white max-w-[64px] min-w-[32px]">
-                  <Image height={64} width={64} src={Separator.src} alt="Alvaro Teran Image" />
-                </div>{" "}
+                <Image height={48} width={48} src={Twitter.src} alt="Alvaro Teran Image" />
               </a>
               <a
-                href="https://github.com/0xukhezo"
+                href="https://hey.xyz/u/ukhezo"
                 target="_blank"
                 className="text-black rounded-full"
               >
-                <div className="rounded-full bg-gradient-to-tl from-[#3f3f3f] to-[#141414] items-center p-2 lg:p-4 hover:bg-gradient-to-tl hover:from-white hover:to-white max-w-[64px] min-w-[32px]">
-                  <Image height={64} width={64} src={Separator.src} alt="Alvaro Teran Image" />
-                </div>{" "}
+                <Image height={48} width={48} src={Lens.src} alt="Alvaro Teran Image" />{" "}
               </a>{" "}
-              <a
+              {/* <a
                 href="https://github.com/0xukhezo"
                 target="_blank"
                 className="text-black rounded-full"
@@ -65,7 +61,7 @@ export default function Credentials() {
                 <div className="rounded-full bg-gradient-to-tl from-[#3f3f3f] to-[#141414] items-center p-2 lg:p-4 hover:bg-gradient-to-tl hover:from-white hover:to-white max-w-[64px] min-w-[32px]">
                   <Image height={64} width={64} src={Separator.src} alt="Alvaro Teran Image" />
                 </div>{" "}
-              </a>
+              </a> */}
             </div>
             <Link href="contact">
               <button className="block w-full bg-lightGray font-semibold rounded-2xl py-3 mt-7">
@@ -128,19 +124,11 @@ export default function Credentials() {
                   {award.title}
                 </h2>{" "}
                 <h2 className="text-sm">Prizes Obtained</h2>
-                <div className="flex mt-[12px] items-center gap-x-6">
-                  <div className="rounded-full bg-gradient-to-tl from-[#3f3f3f] to-[#141414] items-center p-4">
-                    <Image height={24} width={24} src={Separator.src} alt="Alvaro Teran Image" />
-                  </div>
-                  <div className="rounded-full bg-gradient-to-tl from-[#3f3f3f] to-[#141414] items-center p-4">
-                    <Image height={24} width={24} src={Separator.src} alt="Alvaro Teran Image" />
-                  </div>
-                  <div className="rounded-full bg-gradient-to-tl from-[#3f3f3f] to-[#141414] items-center p-4">
-                    <Image height={24} width={24} src={Separator.src} alt="Alvaro Teran Image" />
-                  </div>
-                  <div className="rounded-full bg-gradient-to-tl from-[#3f3f3f] to-[#141414] items-center p-4">
-                    <Image height={24} width={24} src={Separator.src} alt="Alvaro Teran Image" />
-                  </div>
+                <div className="flex mt-[24px] items-center gap-x-8">
+                  <Image height={48} width={48} src={award.prices[0]} alt="Protocol Image" />
+                  <Image height={48} width={48} src={award.prices[1]} alt="Protocol Image" />
+                  <Image height={48} width={48} src={award.prices[2]} alt="Protocol Image" />
+                  <Image height={48} width={48} src={award.prices[3]} alt="Protocol Image" />
                 </div>
               </div>
             )
@@ -148,12 +136,12 @@ export default function Credentials() {
         </div>{" "}
         <div className="mb-[80px]">
           <h2 className="mb-[40px] text-4xl text-white">SKILLS</h2>
-          <div className="grid grid-cols-2">
-            {skills.map((skill: string, index: number) => {
+          <div className="grid lg:grid-cols-2 ">
+            {skills.map((skill: string) => {
               return (
-                <div className={index !== 2 ? "pb-[60px] " : " pm-[20px]"} key={skill}>
+                <div className={"pb-[60px] lg:mr-10"} key={skill}>
                   <h3 className="text-blue-500 font-bold text-2xl mb-1">{skill}</h3>
-                  <p>Language for the client side</p>
+                  <p>Language for the client side.</p>
                 </div>
               )
             })}{" "}

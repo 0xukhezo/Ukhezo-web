@@ -3,7 +3,7 @@ import ProjectCard from "../Cards/Work/ProjectCard"
 
 import Image from "next/image"
 import SeparatorImage from "../../../public/Separator.png"
-import Logo from "../../../public/Logo.png"
+import Logo from "../../../public/Logo.svg"
 
 export default function Work() {
   return (

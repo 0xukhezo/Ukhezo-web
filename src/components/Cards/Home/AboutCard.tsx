@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
-import Logo from "../../../../public/Logo.png"
+import Alvaro from "../../../../public/Alvaro.png"
+import Ukhezo from "../../../../public/Ukhezo.png"
 import Star from "../../../../public/Star.svg"
 
 export default function AboutCard() {
@@ -15,8 +16,8 @@ export default function AboutCard() {
     >
       <div className="relative flex flex-col md:flex-row gap-x-[36px] items-center m-8 w-full">
         <article>
-          <img src={Logo.src} alt="Alvaro Teran Image" />
-          <img src={Logo.src} alt="Alvaro Teran Image" />
+          <img src={Alvaro.src} alt="Alvaro Teran Image" />
+          <img src={Ukhezo.src} alt="Alvaro Teran Image" />
         </article>
         <div className=" w-fit mt-6 md:mt-0 ">
           <h2 className="mb-1.5 font-semibold text-xl opacity-transition-show show">

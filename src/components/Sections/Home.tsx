@@ -2,11 +2,12 @@ import React from "react"
 import AboutCard from "../Cards/Home/AboutCard"
 import SquareCard from "../Cards/Home/SquareCard"
 import FeatureShowerCard from "../Cards/Home/FeatureShowerCard"
-import Logo from "../../../public/Logo.png"
+import Logo from "../../../public/Logo.svg"
 import ServicesCard from "../Cards/Home/ServicesCard"
 import WorkTogetherCard from "../Cards/Home/WorkTogetherCard"
 import ExperienceCard from "../Cards/Home/ExperienceCard"
 import Link from "next/link"
+import Credentials from "../../../public/Credentials.svg"
 
 export default function Home() {
   return (
@@ -23,10 +24,13 @@ export default function Home() {
         <div className="row-span-3 col-span-2 lg:col-span-1">
           <Link href="/credentials">
             <SquareCard
-              image={Logo.src}
+              image={Credentials.src}
               h1={"Credentials"}
               h2={"MORE ABOUT ME"}
-              classNameMain="rounded-3xl bg-gradient-to-t from-[#3f3f3f] to-[#141414] flex"
+              classNameMain="rounded-3xl bg-gradient-to-t from-[#3f3f3f] to-[#141414] flex h-full"
+              classNameContainer="flex flex-col items-center w-full px-4 h-full py-5 xl:pb-0 h-full justify-between max-h-[200px]"
+              imageHeight={282}
+              imageWidth={282}
             />
           </Link>
         </div>
@@ -36,7 +40,10 @@ export default function Home() {
               image={Logo.src}
               h1={"Projects"}
               h2={"SHOWCASE"}
-              classNameMain="rounded-3xl bg-gradient-to-t from-[#3f3f3f] to-[#141414] flex"
+              classNameMain="rounded-3xl bg-gradient-to-t from-[#3f3f3f] to-[#141414] flex h-full"
+              classNameContainer="flex flex-col items-center w-full px-4 h-full py-5 xl:pb-0 h-full justify-between max-h-[200px]"
+              imageHeight={82}
+              imageWidth={82}
             />{" "}
           </Link>
         </div>
@@ -49,6 +56,9 @@ export default function Home() {
               h1={"Last work"}
               h2={"FUNGI"}
               classNameMain="rounded-3xl bg-gradient-to-l from-[#3f3f3f] to-[#141414] flex h-full justify-between"
+              classNameContainer="flex flex-col items-center w-full px-4 h-full py-5 xl:pb-0 h-full justify-between max-h-[230px]"
+              imageHeight={82}
+              imageWidth={82}
             />
           </Link>
         </div>
@@ -63,6 +73,9 @@ export default function Home() {
               h1={"Profiles"}
               h2={"STAY WITH ME"}
               classNameMain="rounded-3xl bg-gradient-to-r from-[#3f3f3f] to-[#141414] flex h-full"
+              classNameContainer="flex flex-col items-center w-full px-4 h-full py-5 xl:pb-0 h-full justify-between max-h-[230px]"
+              imageHeight={82}
+              imageWidth={82}
             />{" "}
           </Link>
         </div>{" "}

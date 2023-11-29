@@ -1,7 +1,7 @@
 import React from "react"
 import Image from "next/image"
 import SeparatorImage from "../../../public/Separator.png"
-import Logo from "../../../public/Logo.png"
+import Logo from "../../../public/Logo.svg"
 import Icon from "../../../public/Icon3.png"
 import Link from "next/link"
 

@@ -4,7 +4,7 @@ import React from "react"
 import Image from "next/image"
 import { useRouter } from "next/router"
 // Images
-import Logo from "../../../public/Logo.png"
+import Logo from "../../../public/Logo.svg"
 // Types
 import { NavigationType } from "@/types/Types"
 import { navigation } from "../../../constants/Constants"
@@ -19,8 +19,8 @@ export default function Footer() {
         <Image
           src={Logo.src}
           alt="Your Company"
-          width={27}
-          height={27}
+          width={143}
+          height={33}
           className="logo rounded-full mb-8 mx-auto"
         />
         <div className="flex justify-center flex-row ">

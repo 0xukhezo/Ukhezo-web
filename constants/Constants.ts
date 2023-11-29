@@ -1,3 +1,12 @@
+import Lens from "../public/Lens.svg"
+import Uniswap from "../public/Uniswap.svg"
+import XMTP from "../public/XMTP.svg"
+import TheGraph from "../public/TheGraph.svg"
+import AAVE from "../public/AAVE.svg"
+import Chainlink from "../public/Chainlink.svg"
+import Push from "../public/Push.svg"
+import Worldcoin from "../public/Worldcoin.svg"
+
 export const navigation = [
   { name: "Home", href: "/" },
   { name: "About", href: "about" },
@@ -59,16 +68,16 @@ export const awards = [
   {
     date: "14 May 2023",
     title: "ETHGlobal Lisbon",
-    prices: ["Uniswap", "AAVE", "The Graph", "Chainlink"],
+    prices: [Uniswap.src, AAVE.src, TheGraph.src, Chainlink.src],
   },
   {
     date: "23 Jul 2023",
     title: "ETHGlobal Paris",
-    prices: ["Worldcoin", "Push Protocol", "The Graph", "XMTP"],
+    prices: [Worldcoin.src, Push.src, TheGraph.src, XMTP.src],
   },
   {
     date: "24 Sep 2023",
     title: "ETHGlobal New York",
-    prices: ["Lens", "AAVE", "The Graph", "XMTP"],
+    prices: [Lens.src, AAVE.src, TheGraph.src, XMTP.src],
   },
 ]

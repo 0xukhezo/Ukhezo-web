@@ -5,7 +5,7 @@ import Image from "next/image"
 // Icons
 import { Disclosure } from "@headlessui/react"
 // Images
-import Logo from "../../../public/Logo.png"
+import Logo from "../../../public/Logo.svg"
 // Types
 import { NavigationType } from "@/types/Types"
 // Constants
@@ -34,8 +34,8 @@ export default function Navbar({ page }: NavbarProps) {
                 <div className="flex-shrink-0">
                   <Link href="/" className="flex items-center">
                     <Image
-                      width={24}
-                      height={24}
+                      width={143}
+                      height={33}
                       alt="Token Image"
                       src={Logo.src}
                       className="rounded-full mt-10 md:mt-0"

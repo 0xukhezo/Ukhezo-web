@@ -1,7 +1,7 @@
 import React from "react"
 import Image from "next/image"
 
-import Logo from "../../../../public/Logo.png"
+import Alvaro from "../../../../public/Alvaro.png"
 
 export default function ImageCard() {
   return (
@@ -9,7 +9,7 @@ export default function ImageCard() {
       <Image
         height={382}
         width={382}
-        src={Logo.src}
+        src={Alvaro.src}
         alt="Alvaro Teran Image"
         className="rounded-3xl"
       />

@@ -1,6 +1,9 @@
 import Image from "next/image"
 import React from "react"
-import SeparatorImage from "../../../public/Separator.png"
+import Github from "../../../public/Github.svg"
+import Twitter from "../../../public/Twitter.svg"
+import Lens from "../../../public/Lens.svg"
+
 import FormCard from "../Cards/Contact/FormCard"
 import { EnvelopeIcon, PhoneIcon, HomeIcon } from "@heroicons/react/24/outline"
 
@@ -49,31 +52,33 @@ export default function Contact() {
           <h1 className="text-xl text-white xs:text-center md:text-start">SOCIAL INFO</h1>
           <div className="flex mt-[28px] items-center justify-evenly md:justify-start">
             <a
-              href="https://github.com/0xukhezo"
+              href="https://twitter.com/0xUkhezo"
               target="_blank"
               className="text-black rounded-full"
             >
-              <div className="rounded-full bg-gradient-to-tl from-[#3f3f3f] to-[#141414] items-center p-4 mr-8  hover:bg-gradient-to-tl hover:from-white hover:to-white">
-                <Image height={40} width={40} src={SeparatorImage.src} alt="Alvaro Teran Image" />
-              </div>{" "}
+              <Image
+                height={48}
+                width={48}
+                src={Twitter.src}
+                alt="Alvaro Teran Image"
+                className="mr-8"
+              />
             </a>
-            <a
-              href="https://github.com/0xukhezo"
-              target="_blank"
-              className="text-black rounded-full"
-            >
-              <div className="rounded-full bg-gradient-to-tl from-[#3f3f3f] to-[#141414] items-center p-4 mr-8  hover:bg-gradient-to-tl hover:from-white hover:to-white">
-                <Image height={40} width={40} src={SeparatorImage.src} alt="Alvaro Teran Image" />
-              </div>{" "}
+            <a href="https://hey.xyz/u/ukhezo" target="_blank" className="text-black rounded-full">
+              <Image
+                height={48}
+                width={48}
+                src={Lens.src}
+                alt="Alvaro Teran Image"
+                className="mr-8"
+              />
             </a>
             <a
               href="https://github.com/0xukhezo"
               target="_blank"
               className="text-black rounded-full "
             >
-              <div className="rounded-full bg-gradient-to-tl from-[#3f3f3f] to-[#141414] items-center p-4 mr-8  hover:bg-gradient-to-tl hover:from-white hover:to-white">
-                <Image height={40} width={40} src={SeparatorImage.src} alt="Alvaro Teran Image" />
-              </div>{" "}
+              <Image height={48} width={48} src={Github.src} alt="Alvaro Teran Image" />
             </a>
           </div>
         </div>
