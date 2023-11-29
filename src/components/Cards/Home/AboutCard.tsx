@@ -4,6 +4,12 @@ import Link from "next/link"
 import Alvaro from "../../../../public/Alvaro.png"
 import Ukhezo from "../../../../public/Ukhezo.png"
 import Star from "../../../../public/Star.svg"
+import local from "next/font/local"
+
+const myFont = local({
+  src: "../../../../public/fonts/Kusanagi.otf",
+  display: "swap",
+})
 
 export default function AboutCard() {
   const [isHovered, setIsHovered] = useState(false)
@@ -20,12 +26,16 @@ export default function AboutCard() {
           <img src={Ukhezo.src} alt="Alvaro Teran Image" />
         </article>
         <div className=" w-fit mt-6 md:mt-0 ">
-          <h2 className="mb-1.5 font-semibold text-xl opacity-transition-show show">
+          <h2
+            className={`mb-1.5 font-semibold text-xl opacity-transition-show show ${
+              isHovered ? `${myFont.className}` : ""
+            }`}
+          >
             {isHovered ? "Web3 Developer" : "Front End Developer"}
           </h2>
           <h1 className="mb-3 font-semibold text-4xl opacity-transition">
             {isHovered ? (
-              <span>Ukhezo</span>
+              <span className={myFont.className}>Ukhezo</span>
             ) : (
               <span>
                 Alvaro <br></br>Teran.
@@ -35,7 +45,7 @@ export default function AboutCard() {
           <p className="text-sm opacity-transition">
             {" "}
             {isHovered ? (
-              <span>I am a Web3 Developer based in Mainnet.</span>
+              <span className={myFont.className}>I am a Web3 Developer based in Mainnet.</span>
             ) : (
               <span>I am a Front End Developer based in Madrid.</span>
             )}
