@@ -7,7 +7,7 @@ import Twitter from "../../../public/Twitter.svg"
 import Lens from "../../../public/Lens.svg"
 import Link from "next/link"
 import { awards, cvInfoEducation, cvInfoExperience, skills } from "../../../constants/Constants"
-import { cvType } from "@/types/Types"
+import { cvType, skillType } from "@/types/Types"
 
 export default function Credentials() {
   return (

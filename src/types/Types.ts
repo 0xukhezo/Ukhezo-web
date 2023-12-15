@@ -9,3 +9,8 @@ export type cvType = {
   location: string
   description: string
 }
+
+export type skillType = {
+  name: string
+  description: string
+}
