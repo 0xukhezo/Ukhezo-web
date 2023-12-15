@@ -42,8 +42,8 @@ export default function Home() {
               h2={"SHOWCASE"}
               classNameMain="rounded-3xl bg-gradient-to-t from-[#3f3f3f] to-[#141414] flex h-full"
               classNameContainer="flex flex-col items-center w-full px-4 h-full py-5 xl:pb-0 h-full justify-between max-h-[200px]"
-              imageHeight={82}
-              imageWidth={82}
+              imageHeight={242}
+              imageWidth={242}
             />{" "}
           </Link>
         </div>

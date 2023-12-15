@@ -34,7 +34,7 @@ export default function ProjectCard({ href, image, long, description, title }: P
 
           <div className="relative flex w-full justify-start items-center mt-4">
             <div>
-              <h2 className="mb-1.5 font-semibold">{description}</h2>
+              <h2 className="mb-1.5 font-semibold uppercase">{description}</h2>
               <h1 className="mb-3 font-semibold text-xl">{title}</h1>{" "}
             </div>
 

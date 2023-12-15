@@ -9,9 +9,9 @@ import Worldcoin from "../public/Worldcoin.svg"
 
 export const navigation = [
   { name: "Home", href: "/" },
-  { name: "About", href: "about" },
-  { name: "Work", href: "works" },
-  { name: "Contact", href: "contact" },
+  { name: "About", href: "/about" },
+  { name: "Work", href: "/works" },
+  { name: "Contact", href: "/contact" },
 ]
 
 export const cvInfoExperience = [

@@ -35,7 +35,7 @@ export default function Work() {
             href={"fungi"}
             image={Logo.src}
             long={false}
-            description={"Pepe"}
+            description={"Assets Management"}
             title={"Fungi"}
           />
         </div>{" "}
@@ -44,7 +44,7 @@ export default function Work() {
             href={"fungi"}
             image={Logo.src}
             long={true}
-            description={"Pepe"}
+            description={"Assets Management"}
             title={"Fungi"}
           />
         </div>{" "}
@@ -53,7 +53,7 @@ export default function Work() {
             href={"fluidsense"}
             image={Logo.src}
             long={true}
-            description={"Pepe"}
+            description={"Steam paiments"}
             title={"Fluid sense"}
           />
         </div>{" "}
@@ -78,10 +78,10 @@ export default function Work() {
         </div>
         <div className="col-span-4 sm:col-span-3 lg:row-start-2 lg:row-end-4 lg:-mt-20 lg:mb-20 lg:col-span-2">
           <ProjectCard
-            href={"upper"}
+            href={"upper-social"}
             image={Logo.src}
             long={false}
-            description={"Pepe"}
+            description={"Social App"}
             title={"Upper Social"}
           />
         </div>
@@ -90,25 +90,25 @@ export default function Work() {
             href={"olivetree"}
             image={Logo.src}
             long={false}
-            description={"Pepe"}
+            description={"Lend & Borrow"}
             title={"Olivetree"}
           />
         </div>
         <div className="col-span-4 sm:col-span-3 lg:row-start-2 lg:row-end-4 lg:-mt-20 lg:mb-20 ">
           <ProjectCard
-            href={"hackers&painters"}
+            href={"hackers-&-painters"}
             image={Logo.src}
             long={false}
-            description={"Pepe"}
+            description={"Subscription Design"}
             title={"Hackers and Painters"}
           />
         </div>
         <div className="col-span-4 sm:col-span-3 lg:row-start-4 lg:row-end-6 lg:-mt-16 lg:mb-16 ">
           <ProjectCard
-            href={"test"}
+            href={"dragon-stake"}
             image={Logo.src}
             long={false}
-            description={"Pepe"}
+            description={"Node Validator"}
             title={"Dragon Stake"}
           />
         </div>
