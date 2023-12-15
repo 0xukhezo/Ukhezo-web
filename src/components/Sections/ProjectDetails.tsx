@@ -12,10 +12,10 @@ type ProjectDetailsProps = {
 export default function ProjectDetails({ project }: ProjectDetailsProps) {
   return (
     <main className="px-10 xl:px-0">
-      {/* <h2 className="mb-[24px] tracking-widest hidden md:block">{project.toUpperCase()}</h2> */}
-      <h2 className="mb-[24px] tracking-widest hidden md:block">PEPE</h2>
+      {/* TODO: Add the type of the page and the correct name instead of self summary */}
+      <h2 className="mb-[24px] tracking-widest hidden md:block uppercase">{project}</h2>
       <div className="pb-[484px] xs:pb-[544px] sm:pb-[560px] lg:pb-[574px]">
-        <div className="flex w-full justify-star mb-[30px] items-center justify-center md:justify-start">
+        <div className="flex w-full justify-star mb-[30px] items-center justify-center md:justify-start hidden md:flex">
           <Image
             src={SeparatorImage}
             alt="Separator"
@@ -24,8 +24,8 @@ export default function ProjectDetails({ project }: ProjectDetailsProps) {
             className="mr-2"
             loading="eager"
           />
-          <span className="text-xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold tracking-wider">
-            SELF-SUMMARY
+          <span className="text-xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold tracking-wider uppercase">
+            {project}
           </span>
           <Image
             src={SeparatorImage}
@@ -36,10 +36,10 @@ export default function ProjectDetails({ project }: ProjectDetailsProps) {
             loading="eager"
           />
         </div>
-        {/* <h2 className="mb-[24px] tracking-widest md:hidden flex justify-center">
-          {project.toUpperCase()}
-        </h2> */}
-        <h2 className="mb-[24px] tracking-widest md:hidden flex justify-center">PEPE</h2>
+        <h2 className="mb-[24px] tracking-widest md:hidden flex justify-center uppercase">
+          {project}
+        </h2>
+
         <img
           src={Logo.src}
           alt="Separator"
@@ -109,8 +109,8 @@ export default function ProjectDetails({ project }: ProjectDetailsProps) {
         <Image
           src={Logo.src}
           alt="Separator"
-          height={100}
-          width={100}
+          height={300}
+          width={300}
           className="rounded-3xl w-full col-span-2 sm:col-span-1 max-h-[300px] sm:max-h-none"
           loading="eager"
         />{" "}
