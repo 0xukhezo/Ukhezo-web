@@ -53,15 +53,6 @@ export default function Credentials() {
               >
                 <Image height={48} width={48} src={Lens.src} alt="Alvaro Teran Image" />{" "}
               </a>{" "}
-              {/* <a
-                href="https://github.com/0xukhezo"
-                target="_blank"
-                className="text-black rounded-full"
-              >
-                <div className="rounded-full bg-gradient-to-tl from-[#3f3f3f] to-[#141414] items-center p-2 lg:p-4 hover:bg-gradient-to-tl hover:from-white hover:to-white max-w-[64px] min-w-[32px]">
-                  <Image height={64} width={64} src={Separator.src} alt="Alvaro Teran Image" />
-                </div>{" "}
-              </a> */}
             </div>
             <Link href="contact">
               <button className="block w-full bg-lightGray font-semibold rounded-2xl py-3 mt-7">
@@ -75,15 +66,11 @@ export default function Credentials() {
         <div className="mb-[80px]">
           <h2 className="mb-[40px] text-4xl text-white">ABOUT ME</h2>
           <p className="mb-[80px]">
-            Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.
-            Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500,
-            cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una
-            galería de textos y los mezcló de tal manera que logró hacer un libro de textos
-            especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno
-            en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado
-            en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de
-            Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus
-            PageMaker, el cual incluye versiones de Lorem Ipsum.
+            Alvaro is a senior front-end developer with four years of experience in software
+            development across various industries, with the two most recent years focused on React
+            and TypeScript. He is well-respected among industry-leading companies as a skilled
+            developer who truly understands the client infrastructure and pain points. Alvaro also
+            has the hands-on technical aptitude needed to design and build solutions.
           </p>
         </div>
         <div className="mb-[80px]">
@@ -137,11 +124,11 @@ export default function Credentials() {
         <div className="mb-[80px]">
           <h2 className="mb-[40px] text-4xl text-white">SKILLS</h2>
           <div className="grid lg:grid-cols-2 ">
-            {skills.map((skill: string) => {
+            {skills.map((skill: skillType) => {
               return (
-                <div className={"pb-[60px] lg:mr-10"} key={skill}>
-                  <h3 className="text-blue-500 font-bold text-2xl mb-1">{skill}</h3>
-                  <p>Language for the client side.</p>
+                <div className={"pb-[60px] lg:mr-10"} key={skill.name}>
+                  <h3 className="text-blue-500 font-bold text-2xl mb-1">{skill.name}</h3>
+                  <p>{skill.description}</p>
                 </div>
               )
             })}{" "}
