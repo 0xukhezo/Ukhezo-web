@@ -1,11 +1,10 @@
 import Image from "next/image"
 import React from "react"
-import Github from "../../../public/Github.svg"
-import Twitter from "../../../public/Twitter.svg"
-import Lens from "../../../public/Lens.svg"
 
 import FormCard from "../Cards/Contact/FormCard"
 import { EnvelopeIcon, PhoneIcon, HomeIcon } from "@heroicons/react/24/outline"
+import { socialLinks } from "../../../constants/Constants"
+import { socialType } from "@/types/Types"
 
 export default function Contact() {
   return (
@@ -51,35 +50,19 @@ export default function Contact() {
         <div className="mb-[64px] md:mt-[64px] col-span-6 ">
           <h1 className="text-xl text-white xs:text-center md:text-start">SOCIAL INFO</h1>
           <div className="flex mt-[28px] items-center justify-evenly md:justify-start">
-            <a
-              href="https://twitter.com/0xUkhezo"
-              target="_blank"
-              className="text-black rounded-full"
-            >
-              <Image
-                height={48}
-                width={48}
-                src={Twitter.src}
-                alt="Alvaro Teran Image"
-                className="mr-8"
-              />
-            </a>
-            <a href="https://hey.xyz/u/ukhezo" target="_blank" className="text-black rounded-full">
-              <Image
-                height={48}
-                width={48}
-                src={Lens.src}
-                alt="Alvaro Teran Image"
-                className="mr-8"
-              />
-            </a>
-            <a
-              href="https://github.com/0xukhezo"
-              target="_blank"
-              className="text-black rounded-full "
-            >
-              <Image height={48} width={48} src={Github.src} alt="Alvaro Teran Image" />
-            </a>
+            {socialLinks.map((social: socialType) => {
+              return (
+                <a href={social.href} target="_blank" className="text-black rounded-full">
+                  <Image
+                    height={48}
+                    width={48}
+                    src={social.image}
+                    alt="Alvaro Teran Image"
+                    className="mr-8"
+                  />
+                </a>
+              )
+            })}
           </div>
         </div>
       </div>{" "}

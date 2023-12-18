@@ -6,6 +6,9 @@ import AAVE from "../public/AAVE.svg"
 import Chainlink from "../public/Chainlink.svg"
 import Push from "../public/Push.svg"
 import Worldcoin from "../public/Worldcoin.svg"
+import Twitter from "../public/Twitter.svg"
+import Linkedin from "../public/Linkedin.svg"
+import Github from "../public/Github.svg"
 
 export const navigation = [
   { name: "Home", href: "/" },
@@ -101,4 +104,11 @@ export const awards = [
     title: "ETHGlobal New York",
     prices: [Lens.src, AAVE.src, TheGraph.src, XMTP.src],
   },
+]
+
+export const socialLinks = [
+  { href: "https://twitter.com/0xUkhezo", image: Twitter.src },
+  { href: "https://hey.xyz/u/ukhezo", image: Lens.src },
+  { href: "https://github.com/0xukhezo", image: Github.src },
+  { href: "https://www.linkedin.com/in/alvaro-teran-rodriguez/", image: Linkedin.src },
 ]

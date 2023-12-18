@@ -6,8 +6,14 @@ import Github from "../../../public/Github.svg"
 import Twitter from "../../../public/Twitter.svg"
 import Lens from "../../../public/Lens.svg"
 import Link from "next/link"
-import { awards, cvInfoEducation, cvInfoExperience, skills } from "../../../constants/Constants"
-import { cvType, skillType } from "@/types/Types"
+import {
+  awards,
+  cvInfoEducation,
+  cvInfoExperience,
+  skills,
+  socialLinks,
+} from "../../../constants/Constants"
+import { cvType, skillType, socialType } from "@/types/Types"
 
 export default function Credentials() {
   return (
@@ -32,27 +38,13 @@ export default function Credentials() {
             <h1 className="mt-8 mb-2 text-4xl ">Alvaro Teran</h1>
             <p className="text-2xl">@0xUkhezo</p>{" "}
             <div className="flex mt-[28px] items-center gap-x-6 justify-around">
-              <a
-                href="https://github.com/0xukhezo"
-                target="_blank"
-                className="text-black rounded-full "
-              >
-                <Image height={48} width={48} src={Github.src} alt="Alvaro Teran Image" />
-              </a>
-              <a
-                href="https://twitter.com/0xUkhezo"
-                target="_blank"
-                className="text-black rounded-full"
-              >
-                <Image height={48} width={48} src={Twitter.src} alt="Alvaro Teran Image" />
-              </a>
-              <a
-                href="https://hey.xyz/u/ukhezo"
-                target="_blank"
-                className="text-black rounded-full"
-              >
-                <Image height={48} width={48} src={Lens.src} alt="Alvaro Teran Image" />{" "}
-              </a>{" "}
+              {socialLinks.map((social: socialType) => {
+                return (
+                  <a href={social.href} target="_blank" className="text-black rounded-full">
+                    <Image height={48} width={48} src={social.image} alt="Alvaro Teran Image" />
+                  </a>
+                )
+              })}
             </div>
             <Link href="contact">
               <button className="block w-full bg-lightGray font-semibold rounded-2xl py-3 mt-7">

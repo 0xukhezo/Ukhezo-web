@@ -14,3 +14,5 @@ export type skillType = {
   name: string
   description: string
 }
+
+export type socialType = { href: string; image: string }
